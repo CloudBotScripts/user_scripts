@@ -1,0 +1,77 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first",
+	"anti_trap":"weapon",
+	"hunt_big_tower":false
+},
+"script_options": {
+	"hours_leave": [9],
+	"sort_deposit": {"rashid": 3, "green_djinn": 4, "blue_djinn": 5}
+},
+"containers": 
+{
+	"gold_bp":"Brocade Backpack",
+	"loot_bp":"Blue Backpack"
+},
+"tools":
+{
+	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"shovel", "id": 3457}
+},
+"items":
+{
+	"mana potion": {"hotkey":"f12", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"f10", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"utani hur": "f8",
+	"utura": "f2",	
+	"exura ico":"f1",
+	"exori hur":"f3",
+	"exori ico":"f4"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":70, "use_item":"great health potion",  "priority":4},
+	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":20, "priority":3},
+	{"type":"mp", "below_percent":80, "use_item":"mana potion", "priority":2},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":20, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 200,
+	"mana_name": "mana potion",
+	"take_mana": 400,
+	"mana_leave": 50,
+	"health_name": "great health potion",
+	"take_health": 40,
+	"health_leave": 15
+},
+"persistent_actions": [
+	{"action":"drop_vials", "interval":60},
+	{"action":"haste", "interval":30, "args":{"hotkey":"f8"}},
+	{"action":"anti_paralyze", "interval":1, "args":["f1"]},
+	{"action":"eat_food", "interval":30, "args":["f11"]}
+],
+"label_actions": 
+    [
+    {"label":"big_tower", "action":"conditional_jump_script_options", "args":
+        {"var_name": "hunt_big_tower", "label_jump":"hunt_big_tower", "label_skip":"skip_big_tower"}}
+    ],
+"target_monsters": 
+[
+	{"name":"Dark Magician", "action":"follow", "priority":3, "loot":true},
+	{"name":"Mad Scientist", "action":"follow", "priority":4, "loot":true},
+	{"name":"Dark Apprentice", "action":"follow", "priority":1, "loot":true},
+	{"name":"Priestess", "action":"follow", "priority":2, "loot":true}
+],
+"target_spells":
+[ 
+	{"name":"exori hur", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Dark Magician", "Mad Scientist", "Priestess"]},
+	{"name":"exori ico", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Dark Magician", "Mad Scientist", "Priestess"]}
+],
+"loot": []
+}
