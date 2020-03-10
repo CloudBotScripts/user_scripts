@@ -1,0 +1,83 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first",
+	"anti_trap":"machete"
+},
+"script_options": {
+	"hours_leave": [9],
+	"sort_deposit": {"rashid": 4, "green_djinn": 3, "yasir": 4}
+},
+"containers": 
+{
+	"gold_bp":"Red Backpack",
+	"loot_bp":"Glooth Backpack"
+},
+"tools":
+{
+	"rope": {"name":"Elvenhair Rope", "id": 646},
+	"shovel": {"name":"shovel", "id": 3457}
+},
+"items":
+{
+	"ultimate mana potion": {"hotkey":"f12", "id":23373, "use":"self"},
+	"great fireball rune": {"hotkey":"f4", "id":3191, "use":"crosshair"},
+	"brown mushroom": {"hotkey":"f9", "id":3725, "use":"use"},
+	"machete": {"hotkey":"u", "id":3308, "use":"crosshair"}
+},
+"spells":
+{
+	"utani gran hur": "f8",
+	"exura gran":"f1",
+	"exura vita":"f2",
+	"exori flam":"f3"
+},
+"healing":
+[
+
+	{"type":"hp", "below_percent":50, "use_spell":"exura vita", "min_mana_percent":10, "priority":4},
+	{"type":"hp", "below_percent":75, "use_spell":"exura gran", "min_mana_percent":5,  "priority":3},
+	{"type":"mp", "below_percent":70, "use_item":"ultimate mana potion", "priority":2}
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "ultimate mana potion",
+	"take_mana": 400,
+	"mana_leave": 50,
+	"rune_name": "great fireball rune",
+	"take_rune": 900,
+	"rune_leave": 120
+},
+"persistent_actions": [
+	{"action":"drop_vials", "interval":60},
+	{"action":"haste", "interval":40, "args":{"hotkey":"f8"}},
+	{"action":"anti_paralyze", "interval":1, "args":["f1"]},
+	{"action":"eat_food", "interval":40, "args":{"hotkey":"f9"}},
+	{"action":"lure_monsters", "interval":0.5, "args":{"count":3}},
+	{"action":"dynamic_barrier_rectangles", "interval":1, "use_in_battle":true, "args":{
+		"rectangles":[
+			[[32881,32872,10],[32896,32881,10]],
+			[[32902,32880,10],[32918,32892,10]],
+			[[32930,32868,10],[32948,32883,10]],
+			[[32935,32890,10],[32956,32904,10]],
+			[[32939,32908,10],[32958,32924,10]],
+			[[32917,32910,10],[32935,32924,10]],
+			[[32882,32897,10],[32906,32920,10]]
+		],
+		"monster_count":1
+	}}
+],
+"target_monsters": 
+[
+	{"name":"Giant Spider", "action":"distance", "distance":3, "priority":5, "loot":true},
+	{"name":"Tarantula", "action":"distance", "distance":2, "priority":1, "loot":false}
+],
+"target_spells":
+[
+	{"name":"exori flam", "min_mana_percent":20, "priority":1, "cooldown":2,
+		"monsters":["Giant Spider", "Tarantula"]},
+	{"name":"great fireball rune", "min_mana_percent":20, "priority":4, "cooldown": 1,  "min_monster_count":2}	
+],
+"loot": []
+}

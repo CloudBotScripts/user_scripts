@@ -1,0 +1,105 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [30],
+	"skill_train":"distance",
+	"sort_deposit": {"rashid": 9, "green_djinn": 10, "blue_djinn": 11}
+},
+"containers": 
+{
+	"loot_bp":"Red Backpack"
+},
+"tools":
+{
+},
+"items":
+{
+	"strong mana potion": {"hotkey":"f1", "id":237, "use":"self"},
+	"great spirit potion": {"hotkey":"f2", "id":7642, "use":"self"},
+	"crystalline arrow": {"hotkey":"f3", "id":15793, "use":"equip"},
+	"brown mushroom": {"hotkey":"f4", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"exura":"v",
+	"exura gran":"f5",
+	"exura gran san":"f6",
+	"exori con":"f7",
+	"exevo mas san":"f8",
+	"utura":"f9",
+	"exori con":"f10"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":45, "use_item":"great spirit potion",  "priority":4},
+	{"type":"hp", "below_percent":90, "use_spell":"exura", "min_mana_percent":10, "priority":1},
+	{"type":"hp", "below_percent":75, "use_spell":"exura gran", "min_mana_percent":20, "priority":2},
+	{"type":"hp", "below_percent":65, "use_spell":"exura gran san", "min_mana_percent":25, "priority":3},
+	{"type":"mp", "below_percent":60, "use_item":"strong mana potion", "priority":1}
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "strong mana potion",
+	"take_mana": 380,
+	"mana_leave": 100,
+	"health_name": "great spirit potion",
+	"take_health": 25,
+	"health_leave": 10,
+	"ammo_name": "crystalline arrow",
+	"take_ammo": 1100,
+	"ammo_leave": 250
+},
+"label_actions": 
+[
+	{"label":"ammo_checker", "action":"conditional_jump_item_count_below", "args": {
+	    "item_name":"crystalline arrow", "amount":400, "label_jump":"buysupplies"}}
+],
+"persistent_actions": [
+	{"action":"cast_spell", "interval":10},
+	{"action":"drop_vials", "interval":60, "args":{"cap":250}},
+	{"action":"anti_paralyze", "interval":1, "args":["f5"]},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f4"}},
+	{"action":"refill_ammo", "interval":60, "args":{"ammo_name":"crystalline arrow", "equip_slot":"ammunition", "min_amount":80}},
+	
+	{"action":"dynamic_barrier", "interval":1, "use_in_battle":true, "args":{
+        "top_left":[32714,31004,8],
+        "bottom_right": [32790,31105,8],
+        "monster_count":1, 
+        "coords_barrier": [
+            [32736,31094,8], [32736,31095,8], [32736,31096,8], [32736,31097,8],
+			[32758,31086,8], [32759,31086,8], [32760,31086,8], [32760,31087,8], [32760,31088,8], [32759,31088,8], [32758,31088,8], [32758,31087,8],
+			
+			[32748,31061,8], [32749,31061,8], [32750,31061,8], [32750,31062,8], [32750,31063,8], [32749,31063,8], [32748,31063,8], [32748,31062,8], 
+			
+			[32765,31044,8], [32766,31044,8], [32767,31044,8], [32767,31045,8], [32767,31046,8], [32766,31046,8], [32765,31046,8], [32765,31045,8],
+
+			[32747,31023,8], [32748,31023,8], [32749,31023,8], [32749,31024,8], [32749,31025,8], [32748,31025,8], [32747,31025,8], [32747,31024,8], 
+			
+			[32733,31054,8], [32734,31054,8], [32735,31054,8], [32735,31055,8], [32735,31056,8], [32734,31056,8], [32733,31056,8], [32733,31055,8], 
+			
+			[32718,31067,8], [32719,31067,8], [32720,31067,8], [32720,31068,8], [32720,31069,8], [32719,31069,8], [32718,31069,8], [32718,31068,8]			
+        ]}
+	}
+ 	
+],
+"target_monsters": 
+[
+	{"name":"Lich", "action":"distance", "loot":true},
+	{"name":"Banshee", "action":"follow", "loot":true},
+	{"name":"Braindeath", "action":"stand", "loot":true},
+	{"name":"Mutated Bat", "action":"follow", "loot":true},
+	{"name":"Giant Spider", "action":"distance", "loot":true},
+	{"name":"Bonebeast", "action":"follow", "loot":true}
+	
+],
+"target_spells": [
+    {"name":"exori con", "min_mana_percent":10, "priority":1, "cooldown":2,
+		"monsters":["Lich", "Banshee", "Braindeath", "Mutated Bat", "Giant Spider", "Bonebeast"]},
+	{"name":"exevo mas san", "min_mana_percent":20, "priority":2, "min_monster_count":3}
+],
+"loot": []
+}

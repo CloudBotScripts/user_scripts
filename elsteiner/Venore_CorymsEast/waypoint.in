@@ -1,0 +1,181 @@
+label start
+label bank_venore
+stand (33020, 32059, 6)
+stand (33017, 32053, 7)
+action deposit
+stand (33020, 32059, 7)
+stand (33019, 32053, 6)
+action bank
+label getsupply
+node (33007, 32053, 6)
+node (32982, 32054, 6)
+node (32982, 32072, 6)
+stand (32971, 32085, 6)
+action sell
+action buy_potions
+label city_tohunt
+node (32977, 32073, 6)
+node (32998, 32073, 6)
+label door1
+door (32999, 32096, 6)
+stand (33004, 32095, 6)
+label door2
+door (33004, 32099, 7)
+ladder (33009, 32100, 7)
+stand (33032, 32096, 6)
+node (33039, 32095, 7)
+node (33060, 32095, 7)
+stand (33071, 32089, 7)
+stand (33073, 32086, 6)
+stand (33072, 32086, 7)
+stand (33084, 32088, 8)
+stand (33093, 32090, 9)
+stand (33096, 32087, 10)
+label hunt
+label checkSE
+label beforecheckSE
+label checkhuntSE
+label goSE
+node (33101, 32108, 11)
+node (33125, 32107, 11)
+node (33139, 32125, 11)
+node (33143, 32144, 11)
+node (33132, 32166, 11)
+node (33121, 32140, 11)
+node (33105, 32177, 11)
+node (33098, 32145, 11)
+node (33103, 32112, 11)
+node (33093, 32102, 11)
+label skipSE
+label checkS
+label beforecheckS
+label checkhuntS
+label goS
+node (33073, 32112, 11)
+node (33073, 32141, 11)
+node (33078, 32162, 11)
+node (33069, 32179, 11)
+node (33047, 32178, 11)
+node (33044, 32151, 11)
+node (33045, 32130, 11)
+node (33067, 32129, 11)
+node (33061, 32117, 11)
+node (33036, 32125, 11)
+node (33038, 32168, 11)
+node (33024, 32173, 11)
+node (33024, 32139, 11)
+node (33037, 32112, 11)
+node (33059, 32102, 11)
+label skipS
+label checkSW
+label beforecheckSW
+label checkhuntSW
+label goSW
+node (33040, 32093, 11)
+node (33003, 32100, 11)
+node (33004, 32126, 11)
+node (33006, 32143, 11)
+node (33005, 32178, 11)
+rope (33007, 32185, 11)
+stand (33000, 32189, 10)
+stand (33007, 32185, 10)
+node (33024, 32196, 11)
+node (33024, 32215, 11)
+node (33052, 32215, 11)
+node (33055, 32197, 11)
+node (33036, 32203, 11)
+node (33051, 32230, 11)
+node (33023, 32234, 11)
+node (33012, 32246, 11)
+node (32992, 32232, 11)
+node (32989, 32217, 11)
+node (32979, 32201, 11)
+rope (32965, 32199, 11)
+stand (32974, 32199, 10)
+stand (32965, 32199, 10)
+node (32943, 32200, 11)
+node (32931, 32210, 11)
+node (32934, 32240, 11)
+node (32918, 32219, 11)
+node (32937, 32199, 11)
+node (32954, 32187, 11)
+node (32972, 32181, 11)
+node (32991, 32189, 11)
+node (32985, 32170, 11)
+node (32971, 32160, 11)
+node (32980, 32133, 11)
+node (32959, 32149, 11)
+node (32940, 32148, 11)
+node (32949, 32127, 11)
+node (32974, 32125, 11)
+node (32976, 32114, 11)
+node (32964, 32104, 11)
+node (33001, 32101, 11)
+node (33031, 32094, 11)
+node (33065, 32088, 11)
+label skipSW
+label checkNW
+label beforecheckNW
+label checkhuntNW
+label goNW
+node (33066, 32069, 11)
+node (33053, 32062, 11)
+node (33032, 32059, 11)
+node (33050, 32075, 11)
+node (33028, 32085, 11)
+node (32997, 32088, 11)
+node (32975, 32094, 11)
+node (32980, 32073, 11)
+node (32986, 32058, 11)
+node (32996, 32037, 11)
+node (33016, 32027, 11)
+node (33042, 32026, 11)
+node (33063, 32028, 11)
+node (33066, 32056, 11)
+node (33077, 32061, 11)
+node (33076, 32077, 11)
+node (33092, 32077, 11)
+label skipNW
+label checkNE
+label beforecheckNE
+label checkhuntNE
+label goNE
+node (33096, 32060, 11)
+node (33111, 32060, 11)
+node (33123, 32065, 11)
+node (33137, 32055, 11)
+node (33145, 32039, 11)
+node (33124, 32016, 11)
+rope (33134, 32016, 11)
+node (33134, 32036, 10)
+node (33134, 32060, 10)
+node (33123, 32088, 10)
+node (33125, 32116, 10)
+node (33116, 32089, 10)
+stand (33096, 32087, 10)
+label skipNE
+action check
+label leave
+stand (33095, 32087, 11)
+rope (33096, 32087, 11)
+rope (33093, 32090, 10)
+rope (33084, 32088, 9)
+ladder (33072, 32086, 8)
+ladder (33073, 32086, 7)
+stand (33071, 32089, 6)
+node (33061, 32095, 7)
+node (33047, 32096, 7)
+ladder (33032, 32096, 7)
+node (33015, 32100, 6)
+stand (33009, 32100, 6)
+stand (33004, 32100, 7)
+door (33004, 32099, 7)
+ladder (33004, 32095, 7)
+stand (33000, 32096, 6)
+door (32999, 32096, 6)
+node (32998, 32087, 6)
+node (32998, 32073, 6)
+node (33016, 32055, 6)
+action check_time
+label train
+action end

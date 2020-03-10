@@ -1,0 +1,147 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"after"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"distance",
+	"icegolems":true,
+	"crystalspiders":false,
+	"selljewels":false,
+	"sellloot":false
+},
+"containers": 
+{
+	"loot_bp":"Red Backpack"
+},
+"tools":
+{
+},
+"items":
+{
+	"strong mana potion": {"hotkey":"f1", "id":237, "use":"self"},
+	"strong health potion": {"hotkey":"f2", "id":236, "use":"self"},
+	"drill bolt": {"hotkey":"f3", "id":16142, "use":"equip"},
+	"brown mushroom": {"hotkey":"f4", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"exura":"v",
+	"exura gran":"f5",
+	"exura gran san":"f6",
+	"exori con":"f7",
+	"exevo mas san":"f8",
+	"utura":"f9"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":50, "use_item":"strong health potion",  "priority":4},
+	{"type":"hp", "below_percent":85, "use_spell":"exura", "min_mana_percent":20, "priority":1},
+	{"type":"hp", "below_percent":70, "use_spell":"exura gran", "min_mana_percent":25, "priority":2},
+	{"type":"hp", "below_percent":60, "use_spell":"exura gran san", "min_mana_percent":35, "priority":3},
+	{"type":"mp", "below_percent":50, "use_item":"strong mana potion", "priority":1}
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "strong mana potion",
+	"take_mana": 170,
+	"mana_leave": 40,
+	"health_name": "strong health potion",
+	"take_health": 25,
+	"health_leave": 10,
+	"ammo_name": "drill bolt",
+	"take_ammo": 600,
+	"ammo_leave": 100
+},
+"label_actions": 
+[
+	{"label":"target_icegolems", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"icegolems", "label_jump":"targeton_icegolems", "label_skip":"targetoff_icegolems"}},
+		
+	{"label":"hunt_icegolems", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"icegolems", "label_jump":"goto_icegolems", "label_skip":"restart"}},
+		
+	{"label":"hunt_crystalspiders", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"crystalspiders", "label_jump":"goto_crystalspiders", "label_skip":"skip_crystalspiders"}},
+		
+	{"label":"check_restart", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"crystalspiders", "label_jump":"restartdown", "label_skip":"huntup"}},
+		
+	{"label":"gotolabel_restart", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"crystalspiders", "label_jump":"restart", "label_skip":"restart"}},
+		
+	{"label":"sell_jewels", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"selljewels", "label_jump":"goselljewels", "label_skip":"skipjewels"}},
+		
+	{"label":"sell_loot", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"sellloot", "label_jump":"gosellloot", "label_skip":"skipselling"}},
+	
+	{"label":"check_up1", "action":"check_hunt", "args": {
+	    "success":"keephunting_up1", "fail":"leaveup", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_up2", "action":"check_hunt", "args": {
+	    "success":"keephunting_up2", "fail":"leaveup", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_up3", "action":"check_hunt", "args": {
+	    "success":"keephunting_up3", "fail":"leaveup", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_down1", "action":"check_hunt", "args": {
+	    "success":"keephunting_down1", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_down2", "action":"check_hunt", "args": {
+	    "success":"keephunting_down2", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_down3", "action":"check_hunt", "args": {
+	    "success":"keephunting_down3", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_down4", "action":"check_hunt", "args": {
+	    "success":"keephunting_down4", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}},
+		
+	{"label":"check_down5", "action":"check_hunt", "args": {
+	    "success":"keephunting_down5", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":true, "time":true, "other":true}}
+],
+"persistent_actions": [
+	{"action":"cast_spell", "interval":10},
+	{"action":"drop_vials", "interval":60},
+	{"action":"anti_paralyze", "interval":1, "args":["f5"]},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f4"}},
+	{"action":"refill_ammo", "interval":60, "args":{"ammo_name":"drill bolt", "equip_slot":"ammunition", "min_amount":80}},
+	
+    {"action":"dynamic_barrier", "interval":1, "use_in_battle":true, "args":{
+        "top_left":[32294,31015,9],
+        "bottom_right": [32392,31103,9],
+        "monster_count":1, 
+        "coords_barrier": [
+            [32375,31056,9], [32376,31056,9], [32377,31056,9], [32378,31056,9], [32379,31056,9], [32380,31056,9], [32381,31056,9], 
+			[32355,31046,9], [32355,31047,9], [32355,31048,9], [32355,31049,9], [32355,31050,9], [32355,31051,9], [32355,31052,9],
+			[32350,31071,9], [32351,31071,9], [32352,31071,9], [32353,31071,9], [32354,31071,9], 
+			[32355,31067,9], [32355,31068,9], [32355,31069,9], [32355,31070,9], [32355,31071,9], 
+			[32331,31073,9], [32332,31073,9], [32333,31073,9], [32334,31073,9], [32335,31073,9], [32336,31073,9], [32337,31073,9], [32338,31073,9], 
+			[32338,31074,9], 
+			[32332,31074,9], 
+			[32313,31058,9], [32313,31059,9], [32313,31060,9], [32313,31061,9], [32313,31062,9], [32313,31063,9], [32313,31064,9], 
+			[32326,31052,9], [32327,31052,9], [32328,31052,9], [32329,31052,9], [32330,31052,9], [32331,31052,9], 
+			[32331,31065,9], [32331,31066,9], [32331,31067,9], [32331,31068,9], [32331,31069,9], [32331,31070,9], [32331,31071,9], [32331,31072,9], [32331,31073,9], [32331,31074,9], 
+			[32339,31049,9], [32339,31050,9], [32339,31051,9], [32339,31052,9], [32339,31053,9], 
+			[32348,31038,9], [32348,31039,9], [32348,31040,9], [32348,31041,9], [32348,31042,9], [32348,31043,9], 
+			[32349,31039,9], 
+			[32375,31065,9], [32376,31065,9], [32377,31065,9], [32378,31065,9], [32379,31065,9], [32380,31065,9], [32381,31065,9], [32382,31065,9], [32383,31065,9], [32384,31065,9], [32385,31065,9], [32386,31065,9], [32387,31065,9], [32388,31065,9], [32389,31065,9], [32390,31065,9] 
+        ]}
+	}
+],
+"target_monsters": 
+[
+	{"name":"Crystal Spider", "action":"distance", "distance":5, "loot":true},
+	{"name":"Ice Golem", "action":"distance", "distance":5, "loot":true},
+	{"name":"Hirintror", "action":"distance", "distance":5, "loot":true}
+	
+],
+"target_spells": [
+    {"name":"exori con", "min_mana_percent":30, "priority":1, "cooldown":3,
+		"monsters":["Crystal Spider", "Ice Golem", "Hirintror"]},
+	{"name":"exevo mas san", "min_mana_percent":40, "priority":2, "min_monster_count":3}
+],
+"loot": []
+}

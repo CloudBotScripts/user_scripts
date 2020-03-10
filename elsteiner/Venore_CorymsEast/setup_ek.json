@@ -1,0 +1,111 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword",
+	"huntSE":true,
+	"huntS":true,
+	"huntSW":true,
+	"huntNW":true,
+	"huntNE":true
+},
+"containers": 
+{
+	"gold_bp":"Golden Backpack",
+	"loot_bp":"Red Backpack"
+},
+"tools": 
+{
+	"rope": {"name":"rope", "id": 3003}
+},
+"items":
+{
+	"mana potion": {"hotkey":"f1", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"f2", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"f3", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"utani hur": "f4",
+	"utura": "f5",
+	"exura ico":"f7",
+	"exori":"f8",
+	"exori ico":"f9"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":40, "use_item":"great health potion",  "priority":4},
+	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":20, "priority":3},
+	{"type":"mp", "below_percent":60, "use_item":"mana potion", "priority":2},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":20, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 200,
+	"mana_name": "mana potion",
+	"take_mana": 450,
+	"mana_leave": 100,
+	"health_name": "great health potion",
+	"take_health": 20,
+	"health_leave": 10
+},
+"label_actions": 
+[
+	{"label":"checkSE", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"huntSE", "label_jump":"beforecheckSE", "label_skip":"skipSE"}},
+
+	{"label":"checkS", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"huntS", "label_jump":"beforecheckS", "label_skip":"skipS"}},
+
+	{"label":"checkSW", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"huntSW", "label_jump":"beforecheckSW", "label_skip":"skipSW"}},
+
+	{"label":"checkNW", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"huntNW", "label_jump":"beforecheckNW", "label_skip":"skipNW"}},
+
+	{"label":"checkNE", "action":"conditional_jump_script_options", "args": {
+	    "var_name":"huntNE", "label_jump":"beforecheckNE", "label_skip":"skipNE"}},	
+		
+	{"label":"checkhuntSE", "action":"check_hunt", "args": {
+	    "success":"goSE", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":false, "time":true, "other":true}},
+			
+	{"label":"checkhuntS", "action":"check_hunt", "args": {
+	    "success":"goS", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":false, "time":true, "other":true}},
+			
+	{"label":"checkhuntSW", "action":"check_hunt", "args": {
+	    "success":"goSW", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":false, "time":true, "other":true}},
+			
+	{"label":"checkhuntNW", "action":"check_hunt", "args": {
+	    "success":"goNW", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":false, "time":true, "other":true}},
+			
+	{"label":"checkhuntNE", "action":"check_hunt", "args": {
+	    "success":"goNE", "fail":"leave", "mana":true, "health":true, "cap":true, "rune":false, "ammo":false, "time":true, "other":true}},
+			
+    {"label":"checkpos1", "action":"conditional_jump_position", "args": {
+	    "coords":"[(33051, 32099, 6)]", "label_jump":"aftercheck1", "label_skip":"beforecheck1"}},
+		
+	{"label":"checkpos2", "action":"conditional_jump_position", "args": {
+	    "coords":"[(33051, 32099, 7)]", "label_jump":"aftercheck2", "label_skip":"beforecheck2"}}
+],
+"persistent_actions": [
+	{"action":"drop_vials", "interval":120, "args":{"cap":350}},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f3"}}
+],
+"target_monsters": 
+[
+	{"name":"Corym Charlatan", "action":"follow", "loot":true},
+	{"name":"Corym Skirmisher", "action":"follow", "loot":true},
+	{"name":"Corym Vanguard", "action":"follow", "loot":true}
+],
+"target_spells":
+[ 
+	{"name":"exori ico", "min_mana_percent":30, "priority":1, "cooldown":6,
+		"monsters":["Corym Vanguard"]},
+	{"name":"exori", "min_mana_percent":30, "priority":2, "min_monster_count":3}
+],
+"loot": []
+}
+
