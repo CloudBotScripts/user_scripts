@@ -1,0 +1,85 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword",
+	"sort_deposit": {"alexander":6, "lailene":6, "tamoril":8, "rashid": 9, "green_djinn": 10, "blue_djinn":6}
+},
+"containers": 
+{
+	"gold_bp":"Brocade Backpack",
+	"loot_bp":"Blue Backpack"
+},
+"tools":{},
+"items":
+{
+	"mana potion": {"hotkey":"f12", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"f10", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"exura ico":"f1",
+	"exori ico":"f2",
+	"exori hur":"f3",
+	"utura": "f9",
+	"utani hur": "v",
+	"exeta res": "x",
+	"exori gran":"f6",
+	"exori min":"f7",
+	"exori":"f4"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":50, "use_item":"great health potion", "priority":3},
+	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":20, "priority":2},
+	{"type":"mp", "below_percent":70, "use_item":"mana potion", "priority":1}
+],
+"hunt_config": {
+	"cap_leave": 50,
+	"mana_name": "mana potion",
+	"take_mana": 650,
+	"mana_leave": 145,
+	"health_name": "great health potion",
+	"take_health": 100,
+	"health_leave": 25
+},
+"label_actions": [],
+"persistent_actions": 
+[
+{
+        "action": "stop_target_no_supplies",
+        "interval": 10,
+        "args": {
+          "mana": true,
+          "health": false,
+          "ammo": false,
+          "time": false
+        }
+      },
+	{"action":"cast_spell_if_monsters", "use_in_battle":true, "interval":5, "args":{"spell_hotkey":"x", "min_mp":20, "monsters_count":1, "selected_monsters":["Wyrm"]}},
+	{"action":"drop_vials", "interval":30},
+	{"action":"haste", "interval":40, "args":{"hotkey":"v"}},
+	{"action":"recover_full_mana", "interval":20, "args":{"hotkey":"f9"}},
+	{"action":"anti_paralyze", "interval":1, "args":["f1"]},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f11"}}
+],
+"target_monsters": 
+[
+	{"name":"Wyrm", "action":"follow", "priority":1, "loot":true},
+	{"name":"Energy Elemental", "action":"follow", "priority":1, "loot":false}
+],
+"target_spells":
+[ 
+	{"name":"exori", "min_mana_percent":30, "priority":3, "min_monster_count":2, "cooldown":4, "monsters":["Wyrm", "Energy Elemental"]},
+	{"name":"exori gran", "min_mana_percent":65, "priority":5, "min_monster_count":3, "cooldown":6, "monsters":["Wyrm", "Energy Elemental"]},
+	{"name":"exori min", "min_mana_percent":50, "priority":4, "min_monster_count":2, "cooldown":6, "monsters":["Wyrm", "Energy Elemental"]},
+	{"name":"exori ico", "min_mana_percent":20, "priority":1, "cooldown":6, "monsters":["Wyrm", "Energy Elemental"]},
+	{"name":"exori hur", "min_mana_percent":20, "priority":2, "cooldown":6, "monsters":["Wyrm", "Energy Elemental"]}
+],
+"loot": []
+}

@@ -20,13 +20,25 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_ek.json) | :star: | :star::star::star:|
 |140+ | [Brimstone Bug Keeper Cave @GPP](GPP/brimstone_bug_keeper/setup.json) | :star::star::star: | :star::star::star:|
 |200+ | [Oramond Western Plains @Juanjo](Juanjo/oramond_rot_votes/setup_ek.json) | :star: | :star::star:|
+|250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_ek.json) | :star::star: | :star::star::star::star:|
+|250+ | [Carnivora's Rock @Juanjo](Juanjo/carnivoras_rock/setup_ek.json) | :star::star::star::star: | :star::star::star::star::star:|
 ### Paladin
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
 |25+ | [Yalahar Cemetery Quarter Right @elsteiner](elsteiner/Yalahar_CemeteryQuarterRight/setup.json) | :star: | :star:|
 |50+ | [Nibelor Ice Golems + Crystal Spiders @elsteiner](elsteiner/Svargrond_Nibeolor_IceGolems_CrystalSpiders/setup_rp.json) | :star: | :star:|
 |80+ | [Yalahar Cemetery -1 @elsteiner](elsteiner/Yalahar_Cemetery-1/setup_rp.json) | :star: | :star:|
+|130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_rp.json) | :star::star: | :star::star::star::star:|
+|250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_rp.json) | :star: | :star::star::star::star::star:|
 ### Mage
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
+|30+ | [Mad Scientists @Juanjo](Juanjo/mad_scientist/setup_mage.json) | :star: | :star::star:|
+|30+ | [Upper Spikes @Juanjo](Juanjo/upper_spikes/setup_mage.json) | :star: | :star::star:|
+|30+ | [Laguna Island @Juanjo](Juanjo/laguna_island/setup_mage_low.json) | :star::star::star::star: | :star::star:|
+|30+ | [Magician Quarter @Juanjo](Juanjo/magician_quarter/setup_mage.json) | :star::star: | :star::star:|
+|50+ | [Apes City -1 Port Hope @Juanjo](Juanjo/apes_city_-1/setup_mage.json) | :star::star::star::star: | :star:|
+|50+ | [Apes City -2 Port Hope @Juanjo](Juanjo/apes_city_-2/setup_mage.json) | :star::star::star::star: | :star:|
+|65+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_mage.json) | :star::star: | :star::star::star:|
+|90+ | [Water Elementals @Juanjo](Juanjo/water_elementals/setup_mage.json) | :star::star: | :star::star::star::star:|
 |150+ | [Port_Hope_Giant_Spiders @The_Taunter](The_Taunter/Port_Hope_Giant_Spiders/setup_mage.json) | :star::star::star: | :star::star::star:|
