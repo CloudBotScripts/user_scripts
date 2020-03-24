@@ -22,6 +22,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |200+ | [Oramond Western Plains @Juanjo](Juanjo/oramond_rot_votes/setup_ek.json) | :star: | :star::star:|
 |250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_ek.json) | :star::star: | :star::star::star::star:|
 |250+ | [Carnivora's Rock @Juanjo](Juanjo/carnivoras_rock/setup_ek.json) | :star::star::star::star: | :star::star::star::star::star:|
+
 ### Paladin
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
@@ -30,6 +31,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |80+ | [Yalahar Cemetery -1 @elsteiner](elsteiner/Yalahar_Cemetery-1/setup_rp.json) | :star: | :star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_rp.json) | :star::star: | :star::star::star::star:|
 |250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_rp.json) | :star: | :star::star::star::star::star:|
+
 ### Mage
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
@@ -42,3 +44,4 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |65+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_mage.json) | :star::star: | :star::star::star:|
 |90+ | [Water Elementals @Juanjo](Juanjo/water_elementals/setup_mage.json) | :star::star: | :star::star::star::star:|
 |150+ | [Port_Hope_Giant_Spiders @The_Taunter](The_Taunter/Port_Hope_Giant_Spiders/setup_mage.json) | :star::star::star: | :star::star::star:|
+
