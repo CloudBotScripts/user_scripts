@@ -1,0 +1,64 @@
+{
+"general": 
+{
+	"loot_type":"manual"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"distance"
+},
+"containers": 
+{
+	"loot_bp":"Red Backpack"
+},
+"tools":
+{
+	"rope": {"name":"rope", "id": 3003}
+},
+"items":
+{
+	"mana potion": {"hotkey":"f1", "id":268, "use":"self"},
+    	"spear": {"hotkey":"k", "id":3277, "use":"equip"},
+	"health potion": {"hotkey":"f2", "id":266, "use":"self"}
+},
+"spells":
+{
+	"exura":"v"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":80, "use_spell":"exura", "min_mana_percent":20, "priority":1},
+	{"type":"hp", "below_percent":25, "use_item":"health potion", "priority":2},
+     {"type":"hp", "below_percent":101, "use_spell":"exura", "min_mana_percent":97, "priority":3},
+	{"type":"mp", "below_percent":20, "use_item":"mana potion", "priority":1}
+],
+"hunt_config": {
+	"cap_leave": 1,
+	"mana_name": "mana potion",
+	"take_mana": 10,
+	"mana_leave": 1,
+	"health_name": "health potion",
+	"take_health": 5,
+	"health_leave": 1
+},
+"persistent_actions": [
+    {"action":"refill_ammo", "interval":5, "use_in_battle":true, "args":{"ammo_name":"spear", "equip_slot":"weapon", "min_amount":1}}
+],
+"target_monsters": 
+[
+	{"name":"Frost Troll", "action":"follow", "loot":true},
+	{"name":"Winter Wolf", "action":"follow", "loot":true},
+	{"name":"Mammoth", "action":"distance", "loot":true},
+	{"name":"Polar Bear", "action":"follow", "loot":true},
+	{"name":"Spider", "action":"follow", "loot":false},
+	{"name":"Poison Spider", "action":"follow", "loot":false},
+	{"name":"Bug", "action":"follow", "loot":false}
+],
+"target_spells": [],
+"loot": [
+	{"name":"winter wolf fur", "action":"loot", "dest":"loot_bp"},
+    {"name":"spear", "action":"loot", "dest":"loot_bp"},
+	{"name":"meat", "action":"use"},
+	{"name":"fish", "action":"use"}
+]
+}

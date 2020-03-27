@@ -1,0 +1,77 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword",
+	"anti_trap":"weapon"
+},
+"containers": 
+{
+	"loot_bp":"Yellow Backpack",
+	"gold_bp":"Golden Backpack"
+},
+"tools": {
+  	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"light shovel", "id": 5710}},
+"items":
+{
+	"mana potion": {"hotkey":"f8", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"f5", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"f12", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"exori hur":"f3",
+    	"exori ico":"f4",
+	"exura ico":"f1",
+	"exori":"f6",
+	"utura gran":"R"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":60, "use_item":"great health potion",  "priority":4},
+	{"type":"hp", "below_percent":80, "use_spell":"exura ico", "min_mana_percent":20, "priority":3},
+	{"type":"mp", "below_percent":50, "use_item":"mana potion", "priority":2},
+	{"type":"hp", "below_percent":90, "use_spell":"utura gran", "min_mana_percent":20, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "mana potion",
+	"take_mana": 400,
+	"mana_leave": 200,
+	"health_name": "great health potion",
+	"take_health": 50,
+	"health_leave": 20
+},
+"label_actions":
+[
+	
+	
+],
+"persistent_actions": [
+	{"action":"drop_vials", "interval":60},
+	{"action":"anti_paralyze", "interval":1, "args":["f1"]},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f12"}}
+],
+"target_monsters": 
+[
+	{"name":"Bonelord", "action":"follow", "priority":3, "loot":true},
+	{"name":"Elder Bonelord", "action":"follow", "priority":2, "loot":true},
+	{"name":"Gazer", "action":"follow", "priority":1, "loot":true}
+	
+	
+],
+"target_spells":
+[ 	
+	{"name":"exori ico", "min_mana_percent":20, "priority":1, "cooldown":6,
+		"monsters":["Elder Bonelord"]},
+	{"name":"exori ico", "min_mana_percent":20, "priority":1, "cooldown":6,
+		"monsters":["Elder Bonelord"]}
+	
+],
+"loot": []
+}
