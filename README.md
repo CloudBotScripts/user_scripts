@@ -34,7 +34,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 ### Paladin
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
-|8+ | [Svargrond Frost Troll - @insanestore @InsaneStore](InsaneStore/Svargrond_Frost_Troll/IS_Svargrond_Frost_Troll_RP_v1.0.json) | :star::star: | :star:|
+|8+ | [Svargrond Frost Troll @InsaneStore](InsaneStore/SvargrondFrostTroll/IS_Svargrond_Frost_Troll_RP_v1.0.json) | :star::star: | :star:|
 |25+ | [Yalahar Cemetery Quarter Right @elsteiner](elsteiner/Yalahar_CemeteryQuarterRight/setup.json) | :star: | :star:|
 |50+ | [Nibelor Ice Golems + Crystal Spiders @elsteiner](elsteiner/Svargrond_Nibeolor_IceGolems_CrystalSpiders/setup_rp.json) | :star: | :star:|
 |80+ | [Yalahar Cemetery -1 @elsteiner](elsteiner/Yalahar_Cemetery-1/setup_rp.json) | :star: | :star:|
