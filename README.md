@@ -24,9 +24,11 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |80+ | [Lions Rock @GPP](GPP/lion_rock/setup.json) | :star::star: | :star::star:|
 |80+ | [LB Wyrms Hills @5qemeister](5qemeister/wyrm_hills_lb/setup_ek.json) | :star::star: | :star::star::star:|
 |100+ | [Hrodmir Crystal Cave @elsteiner](elsteiner/Svargrond_HrodmirCrystalCave/setup.json) | :star: | :star:|
+|100+ | [Tuhalu Quaras @GPP](GPP/luhalu_quaras/setup.json) | :star::star: | :star::star::star:|
 |130+ | [Alchemist Quarter @GPP](GPP/alchemist_quarter/setup.json) | :star: | :star::star::star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_ek.json) | :star: | :star::star::star:|
 |140+ | [Brimstone Bug Keeper Cave @GPP](GPP/brimstone_bug_keeper_cave/setup.json) | :star::star::star: | :star::star::star:|
+|180+ | [Quara Grotto @GPP](GPP/quara_grotto/setup.json) | :star::star: | :star::star::star::star:|
 |200+ | [Oramond Western Plains @Juanjo](Juanjo/oramond_rot_votes/setup_ek.json) | :star: | :star::star:|
 |250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_ek.json) | :star::star: | :star::star::star::star:|
 |250+ | [Carnivora's Rock @Juanjo](Juanjo/carnivoras_rock/setup_ek.json) | :star::star::star::star: | :star::star::star::star::star:|
@@ -37,8 +39,9 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |8+ | [Svargrond Frost Troll @InsaneStore](InsaneStore/SvargrondFrostTroll/IS_Svargrond_Frost_Troll_RP_v1.0.json) | :star::star: | :star:|
 |25+ | [Yalahar Cemetery Quarter Right @elsteiner](elsteiner/Yalahar_CemeteryQuarterRight/setup.json) | :star: | :star:|
 |50+ | [Nibelor Ice Golems + Crystal Spiders @elsteiner](elsteiner/Svargrond_Nibeolor_IceGolems_CrystalSpiders/setup_rp.json) | :star: | :star:|
+|50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setup.json) | :star::star::star: | :star:|
 |80+ | [Yalahar Cemetery -1 @elsteiner](elsteiner/Yalahar_Cemetery-1/setup_rp.json) | :star: | :star:|
-|100+ | [Braindeaths @GPP](GPP/braindeaths/setup.json) | :star::star::star: | :star::star:|
+|100+ | [Braindeaths @GPP](GPP/braindeaths/setuprp.json) | :star::star::star: | :star::star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_rp.json) | :star::star: | :star::star::star::star:|
 |250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_rp.json) | :star: | :star::star::star::star::star:|
 
