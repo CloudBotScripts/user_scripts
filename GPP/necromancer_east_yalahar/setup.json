@@ -2,7 +2,8 @@
 "general": 
 {
 	"loot_type":"auto",
-	"loot_priority":"first"
+	"loot_priority":"first",
+	"anti_trap":"weapon"
 },
 "script_options": {
 	"hours_leave": [9],
@@ -31,7 +32,7 @@
 	"utura gran": "R",
 	"utito tempo": "X",
 	"exura ico":"r",
-	"exori":"1",
+	"exori mas":"1",
 	"exori min":"2",
 	"exori hur":"3",
 	"exori gran":"4",
@@ -72,7 +73,7 @@
 [ 
 	{"name":"exori hur", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Dark Magician", "Dark Apprentice", "Necromancer"]},
 	{"name":"exori ico", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Necromancer"]},
-	{"name":"exori", "min_mana_percent":20, "priority":2, "cooldown": 4, "min_monster_count":3}
+	{"name":"exori mas", "min_mana_percent":20, "priority":2, "cooldown": 4, "min_monster_count":4}
 ],
 "loot": []
 }

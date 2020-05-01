@@ -57,4 +57,3 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |65+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_mage.json) | :star::star: | :star::star::star:|
 |90+ | [Water Elementals @Juanjo](Juanjo/water_elementals/setup_mage.json) | :star::star: | :star::star::star::star:|
 |150+ | [Port_Hope_Giant_Spiders @The_Taunter](The_Taunter/Port_Hope_Giant_Spiders/setup_mage.json) | :star::star::star: | :star::star::star:|
-
