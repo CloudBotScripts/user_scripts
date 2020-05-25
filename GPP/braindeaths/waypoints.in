@@ -1,0 +1,130 @@
+label start
+node (32336, 32842, 7)
+action deposit
+action refill
+stand (32338, 32836, 7)
+action bank
+node (32342, 32829, 7)
+node (32340, 32817, 7)
+stand (32347, 32809, 7)
+stand (32347, 32809, 6)
+action sell
+action buy_potions
+node (32340, 32824, 7)
+node (32325, 32827, 7)
+node (32313, 32832, 7)
+node (32302, 32827, 7)
+stand (32294,32820,7)
+action buy_ammo
+action check_supplies
+label go_hunt
+node (32274, 32839, 7)
+node (32264, 32847, 7)
+node (32237, 32840, 7)
+node (32214, 32827, 7)
+node (32200, 32818, 7)
+node (32188, 32808, 7)
+node (32185, 32792, 7)
+node (32167, 32786, 7)
+node (32162, 32783, 7)
+shovel (32158, 32782, 7)
+label bonelords
+node (32135, 32772, 8)
+node (32122, 32779, 8)
+node (32107, 32773, 8)
+node (32087, 32778, 8)
+node (32086, 32791, 8)
+stand (32087, 32796, 8)
+node (32081, 32792, 9)
+node (32077, 32785, 9)
+node (32082, 32781, 9)
+node (32088, 32778, 9)
+node (32096, 32775, 9)
+node (32104, 32778, 9)
+node (32109, 32786, 9)
+stand (32111, 32790, 9)
+node (32108, 32799, 8)
+node (32112, 32807, 8)
+node (32121, 32812, 8)
+node (32135, 32810, 8)
+node (32137, 32801, 8)
+node (32134, 32794, 8)
+stand (32136, 32787, 8)
+label hunt
+node (32136, 32790, 9)
+node (32131, 32777, 9)
+node (32124, 32767, 9)
+node (32115, 32767, 9)
+node (32111, 32755, 9)
+node (32120, 32754, 9)
+node (32130, 32754, 9)
+node (32136, 32760, 9)
+node (32130, 32768, 9)
+action check
+label leave
+node (32124, 32759, 9)
+stand (32117, 32750, 9)
+node (32152, 32783, 8)
+rope (32158, 32782, 8)
+node (32173, 32789, 7)
+node (32201, 32816, 7)
+node (32225, 32830, 7)
+node (32250, 32843, 7)
+node (32268, 32848, 7)
+node (32282, 32851, 7)
+node (32298, 32848, 7)
+node (32311, 32846, 7)
+node (32320, 32838, 7)
+node (32331, 32835, 7)
+action check_time
+label train
+node (32343, 32836, 7)
+node (32347, 32815, 7)
+node (32370, 32815, 7)
+stand (32382, 32815, 7)
+node (32388, 32811, 6)
+stand (32390, 32805, 6)
+stand (32390, 32802, 6)
+node (32406, 32800, 5)
+stand (32409, 32806, 5)
+node (32410, 32814, 4)
+node (32405, 32815, 4)
+stand (32404, 32812, 4)
+stand (32403, 32811, 3)
+door (32402, 32811, 3)
+stand (32400, 32812, 3)
+node (32395, 32814, 2)
+stand (32395, 32820, 2)
+action check_train
+label sword
+ladder (32393, 32820, 2)
+action end
+label axe
+ladder (32397, 32820, 2)
+action end
+label club
+ladder (32393, 32822, 2)
+action end
+ladder (32397, 32822, 2)
+label distance
+ladder (32397, 32822, 2)
+action end
+label magic
+ladder (32393, 32824, 2)
+action end
+label start_trainer
+stand (32395, 32818, 2)
+stand (32400, 32812, 2)
+stand (32401, 32811, 3)
+door (32402, 32811, 3)
+stand (32404, 32812, 3)
+node (32408, 32817, 4)
+stand (32410, 32806, 4)
+node (32404, 32800, 5)
+node (32395, 32802, 5)
+stand (32391, 32802, 5)
+node (32387, 32810, 6)
+stand (32383, 32815, 6)
+node (32371, 32815, 7)
+node (32343, 32815, 7)
+node (32342, 32829, 7)

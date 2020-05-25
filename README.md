@@ -24,6 +24,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |80+ | [Lions Rock @GPP](GPP/lion_rock/setup.json) | :star::star: | :star::star:|
 |80+ | [LB Wyrms Hills @5qemeister](5qemeister/wyrm_hills_lb/setup_ek.json) | :star::star: | :star::star::star:|
 |100+ | [Hrodmir Crystal Cave @elsteiner](elsteiner/Svargrond_HrodmirCrystalCave/setup.json) | :star: | :star:|
+|100+ | [Deepsea Blood Crabs Svargrond @Akinael](Akinael/Deepsea_blood_crabs/setup_ek.json) | :star::star::star: | :star::star::star:|
 |100+ | [Tuhalu Quaras @GPP](GPP/luhalu_quaras/setup.json) | :star::star: | :star::star::star:|
 |130+ | [Alchemist Quarter @GPP](GPP/alchemist_quarter/setup.json) | :star: | :star::star::star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_ek.json) | :star: | :star::star::star:|
@@ -57,3 +58,4 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |65+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_mage.json) | :star::star: | :star::star::star:|
 |90+ | [Water Elementals @Juanjo](Juanjo/water_elementals/setup_mage.json) | :star::star: | :star::star::star::star:|
 |150+ | [Port_Hope_Giant_Spiders @The_Taunter](The_Taunter/Port_Hope_Giant_Spiders/setup_mage.json) | :star::star::star: | :star::star::star:|
+
