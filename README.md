@@ -16,8 +16,8 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |50+ | [Apes City -2 Port Hope @Juanjo](Juanjo/apes_city_-2/setup_ek.json) | :star::star::star::star: | :star:|
 |50+ | [Dragons Yalahar @Juanjo](Juanjo/dragons_yalahar/setup_ek.json) | :star::star: | :star::star:|
 |60+ | [Necromancer East Yalahar @GPP](GPP/necromancer_east_yalahar/setup.json) | :star::star: | :star::star:|
-|60+ | [Bonelord Cave @GPP](GPP/bonelord/setup.json) | :star::star::star: | :star:|
-|70+ | [Vandura Second Floor @GPP](GPP/vandura_-2/setup.json) | :star: | :star::star:|
+|60+ | [Bonelord Cave @GPP](GPP/bonelord_cave/setup.json) | :star::star::star: | :star:|
+|70+ | [Vandura Second Floor @GPP](GPP/vandura_2nd/setup.json) | :star: | :star::star:|
 |70+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_ek70.json) | :star::star: | :star::star::star:|
 |80+ | [Venore Coryms East @elsteiner](elsteiner/Venore_CorymsEast/setup_ek.json) | :star: | :star:|
 |80+ | [Hidden Crystal Spiders @GPP](GPP/crystal_spider_hidden/setup.json) | :star::star::star: | :star::star:|
@@ -25,12 +25,15 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |80+ | [LB Wyrms Hills @5qemeister](5qemeister/wyrm_hills_lb/setup_ek.json) | :star::star: | :star::star::star:|
 |100+ | [Hrodmir Crystal Cave @elsteiner](elsteiner/Svargrond_HrodmirCrystalCave/setup.json) | :star: | :star:|
 |100+ | [Deepsea Blood Crabs Svargrond @Akinael](Akinael/Deepsea_blood_crabs/setup_ek.json) | :star::star::star: | :star::star::star:|
-|100+ | [Tuhalu Quaras @GPP](GPP/luhalu_quaras/setup.json) | :star::star: | :star::star::star:|
+|100+ | [Tuhalu Quaras @GPP](GPP/tuhalu_quaras/setup.json) | :star::star: | :star::star::star:|
+|120+ | [Thais Ice Portal @GPP](GPP/thais_ice_portal/setup.json) | :star::star::star: | :star::star:|
 |130+ | [Alchemist Quarter @GPP](GPP/alchemist_quarter/setup.json) | :star: | :star::star::star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_ek.json) | :star: | :star::star::star:|
-|140+ | [Brimstone Bug Keeper Cave @GPP](GPP/brimstone_bug_keeper_cave/setup.json) | :star::star::star: | :star::star::star:|
+|140+ | [Brimstone Bug Keeper Cave @GPP](GPP/brimstonebug_keepercave/setup.json) | :star::star::star: | :star::star::star:|
 |180+ | [Quara Grotto @GPP](GPP/quara_grotto/setup.json) | :star::star: | :star::star::star::star:|
 |200+ | [Oramond Western Plains @Juanjo](Juanjo/oramond_rot_votes/setup_ek.json) | :star: | :star::star:|
+|240+ | [Chosen Snake @GPP](GPP/chosen_snake/setup.json) | :star::star::star::star: | :star::star::star:|
+|250+ | [Brimstone Bug Surface @GPP](GPP/brimstonebug_surface/setup.json) | :star::star::star: | :star::star::star:|
 |250+ | [Elder Wyrm Drefia @Juanjo](Juanjo/elder_wyrms/setup_ek.json) | :star::star: | :star::star::star::star:|
 |250+ | [Carnivora's Rock @Juanjo](Juanjo/carnivoras_rock/setup_ek.json) | :star::star::star::star: | :star::star::star::star::star:|
 
@@ -38,6 +41,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
 |8+ | [Svargrond Frost Troll @InsaneStore](InsaneStore/SvargrondFrostTroll/IS_Svargrond_Frost_Troll_RP_v1.0.json) | :star::star: | :star:|
+|20+ | [Zombie Liberty Bay @GPP](GPP/zombie_lb/setup.json) | :star: | :star::star::star:|
 |25+ | [Yalahar Cemetery Quarter Right @elsteiner](elsteiner/Yalahar_CemeteryQuarterRight/setup.json) | :star: | :star:|
 |50+ | [Nibelor Ice Golems + Crystal Spiders @elsteiner](elsteiner/Svargrond_Nibeolor_IceGolems_CrystalSpiders/setup_rp.json) | :star: | :star:|
 |50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setup.json) | :star::star::star: | :star:|

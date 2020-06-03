@@ -1,0 +1,4 @@
+# need ice island quest till access to mines.
+# then you give 50 fish to npc albinus to got access to portal.
+
+HUNT: EK 120+; profit is most rope belts and few spider silk

@@ -2,14 +2,14 @@
 "general": 
 {
     "loot_type":"auto",
-    "loot_priority":"first"
+    "loot_priority":"first",
+    "anti_trap":"weapon"
 },
 "script_options": {
     "hours_leave": [9]
 },
 "containers": 
 {
-    "gold_bp":"Golden Backpack",
     "loot_bp":"Red Backpack"
 },
 "tools": 
@@ -20,7 +20,7 @@
 "items":
 {
     "mana potion": {"hotkey":"e", "id":268, "use":"self"},
-    "health potion": {"hotkey":"f", "id":268, "use":"self"}
+    "health potion": {"hotkey":"f", "id":266, "use":"self"}
     
 },
 "spells":

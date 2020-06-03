@@ -1,0 +1,6 @@
+# starts at liberty bay depot
+
+HUNT: RP 20+?; bot will hunt zombie with stealth ring and bow+sniper arrow
+EXP is about 160-200k hour/green stamina
+
+need Pirate Treasure Map on depot 6 and steaths on 5
