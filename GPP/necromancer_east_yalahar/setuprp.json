@@ -1,0 +1,84 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"after",
+	"anti_trap":"knife"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"distance"
+},
+"containers": 
+{
+	"loot_bp":"Yellow Backpack"
+},
+"tools": {
+  	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"light shovel", "id": 5710}},
+"items":
+{
+	"strong mana potion": {"hotkey":"f8", "id":237, "use":"self"},
+	"great spirit potion": {"hotkey":"f5", "id":7642, "use":"self"},
+	"brown mushroom": {"hotkey":"f12", "id":3725, "use":"use"},
+	"onyx arrow": {"hotkey":"f10", "id":7365, "use":"equip"},
+	"knife": {"hotkey":"f11","id":3291, "use":"crosshair"}
+},
+"spells":
+{
+	"exori con":"f3",
+    	"exura":"f4",
+	"exura san":"f1",
+	"exura gran san":"f6",
+	"utura":"R"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":70, "use_spell":"exura san", "min_mana_percent":20, "priority":4},
+	{"type":"hp", "below_percent":50, "use_spell":"exura gran san", "min_mana_percent":20, "priority":5},
+	{"type":"hp", "below_percent":90, "use_spell":"exura", "min_mana_percent":20, "priority":3},
+	{"type":"mp", "below_percent":50, "use_item":"strong mana potion", "priority":2},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":20, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 50,
+	"mana_name": "strong mana potion",
+	"take_mana": 200,
+	"mana_leave": 30,
+	"health_name": "great spirit potion",
+	"take_health": 5,
+	"health_leave": 2,
+	"ammo_name": "onyx arrow",
+        "take_ammo": 1000,
+        "ammo_leave": 300,
+        "hotkey_ammo": 21
+},
+"label_actions":
+[
+	 
+],
+"persistent_actions": [
+	{"action":"drop_vials", "interval":60},
+	{"action":"anti_paralyze", "interval":1, "args":["f4"]},
+	{"action":"refill_ammo", "interval":3, "use_in_battle":true, "args":{"ammo_name":"onyx arrow", "equip_slot":"ammunition", "min_amount":0}},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f12"}}
+],
+"target_monsters": 
+[
+	{"name":"Necromancer", "action":"follow", "priority":4, "loot":true},
+	{"name":"Dark Magician", "action":"follow", "priority":4, "loot":true},
+	{"name":"Dark Apprentice", "action":"follow", "priority":4, "loot":true},
+	{"name":"Mad Scientist", "action":"distance", "distance":3, "priority":1, "loot":true},
+	{"name":"Priestess", "action":"stand", "priority":1, "loot":true}
+	
+	
+	
+],
+"target_spells":
+[ 	
+	{"name":"exori con", "min_mana_percent":20, "priority":1, "cooldown":2,
+		"monsters":["Necromancer", "Dark Magician", "Dark Apprentice", "Mad Scientist", "Priestess"]}
+
+],
+"loot": []
+}

@@ -15,7 +15,8 @@
 "tools": 
 {
 	"rope": {"name":"rope", "id": 3003},
-	"shovel": {"name":"rope", "id": 3457}
+	"shovel": {"name":"rope", "id": 3457},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
 },
 "items":
 {
@@ -25,7 +26,7 @@
 },
 "spells":
 {
-    "exura ico":"r"
+    "exura ico":"v"
 
 },
 "healing":
@@ -48,7 +49,8 @@
 
 "persistent_actions": 
 [
-    {"action":"drop_vials", "interval":60}
+    {"action":"drop_vials", "interval":60},
+    {"action":"cast_spell", "interval":10}
     
 ],
 "target_monsters": 

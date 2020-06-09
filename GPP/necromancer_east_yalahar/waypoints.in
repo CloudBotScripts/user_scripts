@@ -1,21 +1,5 @@
 label start
-stand (32797, 31246, 7)
-stand (32789, 31247, 6)
-action deposit
-stand (32797, 31246, 6)
-node (32816, 31254, 7)
-stand (32819, 31249, 7)
-action bank
-node (32803, 31233, 7)
-node (32790, 31234, 7)
-label tower_supplies
-stand (32790, 31239, 7)
-stand (32789, 31239, 6)
-stand (32790, 31238, 5)
-action sell
-action buy_potions
-stand (32789, 31239, 5)
-stand (32790, 31239, 6)
+load scripts/general/refill_yalahar.in
 node (32790, 31234, 7)
 label go_hunt
 node (32797, 31233, 7)

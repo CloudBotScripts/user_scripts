@@ -21,12 +21,13 @@
 	"treasure map": {"hotkey":"f2", "id":5706, "use":"use"},
 	"stealth ring": {"hotkey":"f11", "id":3049, "use":"equip"},
 	"brown mushroom": {"hotkey":"f12", "id":3725, "use":"use"},
-	"onyx arrow": {"hotkey":"f10", "id":7365, "use":"equip"}
+	"sniper arrow": {"hotkey":"f10", "id":7364, "use":"equip"}
 },
 "spells":
 {
 	"exori con":"f3",
     	"exura":"f4",
+	"exura gran":"v",
 	"exura san":"f1",
 	"exura gran san":"f6",
 	"utura":"R"
@@ -34,7 +35,8 @@
 "healing":
 [
 	
-	{"type":"hp", "below_percent":70, "use_spell":"exura san", "min_mana_percent":20, "priority":4},
+	{"type":"hp", "below_percent":60, "use_spell":"exura san", "min_mana_percent":20, "priority":4},
+	{"type":"hp", "below_percent":90, "use_spell":"exura gran", "min_mana_percent":20, "priority":3},
 	{"type":"hp", "below_percent":90, "use_spell":"exura", "min_mana_percent":20, "priority":3},
 	{"type":"mp", "below_percent":50, "use_item":"mana potion", "priority":2},
 	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":20, "priority":1, "cooldown":60}
@@ -44,7 +46,7 @@
 	"mana_name": "mana potion",
 	"take_mana": 150,
 	"mana_leave": 50,
-	"ammo_name": "onyx arrow",
+	"ammo_name": "sniper arrow",
         "take_ammo": 550,
         "ammo_leave": 300,
         "hotkey_ammo": 21
@@ -60,7 +62,7 @@
 	{"action":"drop_vials", "interval":60},
 	{"action":"equip_item", "interval":3, "use_in_battle":true, "args":{"hotkey":"f11", "selected_monsters":["Zombie", "Crypt Shambler"], "amount":1}},
 	{"action":"anti_paralyze", "interval":1, "args":["f4"]},
-	{"action":"refill_ammo", "interval":3, "use_in_battle":true, "args":{"ammo_name":"onyx arrow", "equip_slot":"ammunition", "min_amount":10}},
+	{"action":"refill_ammo", "interval":3, "use_in_battle":true, "args":{"ammo_name":"sniper arrow", "equip_slot":"ammunition", "min_amount":10}},
 	{"action":"eat_food", "interval":60, "args":{"hotkey":"f12"}}
 ],
 "target_monsters": 

@@ -10,10 +10,14 @@
 },
 "containers": 
 {
-    "gold_bp":"Golden Backpack",
     "loot_bp":"Red Backpack"
 },
-"tools": {},
+"tools": 
+{
+	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"rope", "id": 3457},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
 "items":
 {
     "mana potion": {"hotkey":"e", "id":268, "use":"self"},
@@ -22,7 +26,7 @@
 },
 "spells":
 {
-    "exura ico":"r"
+    "exura ico":"v"
 
 },
 "healing":
@@ -45,7 +49,8 @@
 
 "persistent_actions": 
 [
-    {"action":"drop_vials", "interval":60}
+    {"action":"drop_vials", "interval":60},
+    {"action":"cast_spell", "interval":10}
     
 ],
 "target_monsters": 
