@@ -1,0 +1,68 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"magic"
+},
+"containers": 
+{
+	"gold_bp":"Golden Backpack",
+	"loot_bp":"Yellow Backpack"
+},
+"tools":
+{
+	"rope": {"name":"rope", "id": 3003},
+	"light shovel": {"name":"light shovel", "id": 5710}
+},
+"items":
+{
+	"great mana potion": {"hotkey":"e", "id":238, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"utani gran hur":"v",
+	"exura":"1",
+	"exura gran":"2",
+	"exura vita":"3",
+	"exori vis":"4",
+	"exori gran vis":"5",
+	"exori amp vis":"6"
+
+},
+"healing":
+[
+	{"type": "hp", "below_percent": 60, "use_spell": "exura vita", "min_mana_percent": 10, "priority": 3 },
+	{"type": "hp", "below_percent": 70, "use_spell": "exura gran", "min_mana_percent": 10, "priority": 2 },
+	{"type": "hp", "below_percent": 90, "use_spell": "exura", "min_mana_percent": 10, "priority": 1 },
+	{"type": "mp", "below_percent": 65, "use_item": "great mana potion", "priority": 1 }
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "great mana potion",
+	"take_mana": 220,
+	"mana_leave": 50
+},
+"persistent_actions": [
+        {"action":"drop_vials", "interval":60},
+	{"action":"lure_monsters", "interval":0.5, "args":[2]},
+	{"action": "anti_paralyze", "interval": 3, "use_in_battle":true, "args": ["1"] },
+	{"action":"eat_food","interval":60,"args":{"hotkey":"f11"}}
+],
+"target_monsters": 
+[
+	{"name":"Crystal Spider", "action":"follow", "loot":true},
+	{"name":"Ice Golem", "action":"follow", "loot":true}
+],
+"target_spells":
+[ 
+	{"name": "exori gran vis", "min_mana_percent": 101, "priority": 2, "cooldown": 8, "distance": 3, "monsters": ["Crystal Spider"]},
+	{"name": "exori amp vis", "min_mana_percent": 10, "priority": 2, "cooldown": 8, "distance": 6, "monsters": ["Crystal Spider", "Ice Golem"]},
+	{"name": "exori vis", "min_mana_percent": 2, "priority": 1, "cooldown": 3, "distance": 3, "monsters": ["Crystal Spider", "Ice Witch", "Ice Golem"]}
+],
+"loot": []
+}

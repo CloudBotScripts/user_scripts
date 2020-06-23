@@ -65,11 +65,11 @@
 ],
 "target_monsters": 
 [
-	{"name":"Necromancer", "action":"follow", "priority":4, "loot":true},
-	{"name":"Dark Magician", "action":"follow", "priority":4, "loot":true},
-	{"name":"Dark Apprentice", "action":"follow", "priority":4, "loot":true},
-	{"name":"Mad Scientist", "action":"distance", "distance":3, "priority":1, "loot":true},
-	{"name":"Priestess", "action":"stand", "priority":1, "loot":true}
+	{"name":"Necromancer", "action":"stand", "priority":4, "loot":true},
+	{"name":"Dark Magician", "action":"stand", "priority":4, "loot":true},
+	{"name":"Dark Apprentice", "action":"stand", "priority":3, "loot":true},
+	{"name":"Mad Scientist", "action":"stand", "priority":1, "loot":true},
+	{"name":"Priestess", "action":"stand", "priority":2, "loot":true}
 	
 	
 	

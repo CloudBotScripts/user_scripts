@@ -61,6 +61,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |50+ | [Apes City -1 Port Hope @Juanjo](Juanjo/apes_city_-1/setup_mage.json) | :star::star::star::star: | :star:|
 |50+ | [Apes City -2 Port Hope @Juanjo](Juanjo/apes_city_-2/setup_mage.json) | :star::star::star::star: | :star:|
 |65+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_mage.json) | :star::star: | :star::star::star:|
+|70+ | [Hidden Crystal Spiders @GPP](GPP/crystal_spider_hidden/setupMage.json) | :star::star::star: | :star::star:|
 |90+ | [Water Elementals @Juanjo](Juanjo/water_elementals/setup_mage.json) | :star::star: | :star::star::star::star:|
 |150+ | [Port_Hope_Giant_Spiders @The_Taunter](The_Taunter/Port_Hope_Giant_Spiders/setup_mage.json) | :star::star::star: | :star::star::star:|
 
