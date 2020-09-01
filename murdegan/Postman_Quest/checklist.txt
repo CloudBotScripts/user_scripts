@@ -1,0 +1,15 @@
+se necesita 500 de capacidad y todos estos items en la backpack:
+20 Bones
+Crowbar
+1 Mouldy Cheese
+1 Banana Skin
+1 Dirty Fur
+12 Arrows
+1 Grapes
+2 Stealth Ring
+rope
+light shovel
+100 mana potions
+50 strong heal potions
+partir en thais depot, en la superficie
+si editas algo del setup debes asegurarte de no cambiar los hotkeys

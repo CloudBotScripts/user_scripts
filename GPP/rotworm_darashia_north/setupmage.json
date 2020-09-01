@@ -2,8 +2,7 @@
 "general": 
 {
     "loot_type":"auto",
-    "loot_priority":"after",
-    "anti_trap":"weapon"
+    "loot_priority":"after"
 },
 "script_options": {
     "hours_leave": [9]
@@ -19,19 +18,21 @@
 },
 "items":
 {
-    "mana potion": {"hotkey":"e", "id":268, "use":"self"},
-    	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"},
-    "health potion": {"hotkey":"f", "id":266, "use":"self"}
-    
+    	"mana potion": {"hotkey":"e", "id":268, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"},
+    	"health potion": {"hotkey":"f", "id":266, "use":"self"}
+    	
 },
 "spells":
 {
-    "exura ico":"v"
+    "exura":"v",
+	"exori infir tera":"1",
+	"exori infir vis":"2"
 
 },
 "healing":
 [
-    {"type":"hp", "below_percent":75, "use_spell":"exura ico", "min_mana_percent":5,  "priority":3},
+    {"type":"hp", "below_percent":75, "use_spell":"exura", "min_mana_percent":5,  "priority":3},
     {"type":"hp", "below_percent":55, "use_item":"health potion", "priority":3},
     {"type":"mp", "below_percent":20, "use_item":"mana potion", "priority":2}
 ],
@@ -41,8 +42,8 @@
     "take_mana": 50,
     "mana_leave": 30,
     "health_name": "health potion",
-    "take_health": 25,
-    "health_leave": 12
+    "take_health": 5,
+    "health_leave": 2
 },
 "label_actions": 
 [],
@@ -50,8 +51,8 @@
 "persistent_actions": 
 [
     {"action":"drop_vials", "interval":60},
-    {"action":"cast_spell", "interval":10},
-    {"action":"eat_food", "interval":30, "args":["f11"]}
+	{"action":"eat_food", "interval":30, "args":["f11"]},
+    {"action":"cast_spell", "interval":10}
     
 ],
 "target_monsters": 
@@ -60,6 +61,12 @@
     {"name":"Carrion Worm", "action":"follow", "loot":true}
 ],
 "target_spells":
-[],
+[
+	{"name":"exori infir tera", "min_mana_percent":10, "priority":1, "cooldown":2, 
+		"monsters":["Carrion Worm", "Rotworm"]},
+	{"name":"exori infir vis", "min_mana_percent":10, "priority":1, "cooldown":2, 
+		"monsters":["Carrion Worm", "Rotworm"]}
+
+],
 "loot": []
 }

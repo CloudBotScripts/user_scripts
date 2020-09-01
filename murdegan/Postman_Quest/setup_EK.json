@@ -1,0 +1,133 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+ 
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword"
+},
+"containers": 
+{
+	"gold_bp":"Orange Backpack",
+	"loot_bp":"Purple Backpack"
+},
+"tools":
+{
+	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"light shovel", "id": 5710}
+},
+"items":
+{
+        "stealth ring": {"hotkey":"F4", "id":3049, "use":"equip"},
+	"mana potion": {"hotkey":"E", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"F3", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"F11", "id":3725, "use":"use"},
+        "crowbar": {"hotkey":"F1", "id":3304, "use":"crosshair"},
+        "letterbag": {"hotkey":"F2", "id":3217, "use":"crosshair"}
+},
+"spells":
+{
+	"utani hur": "V",
+	"utura": "R",
+	"utito tempo": "X",
+	"exura ico":"L",
+	"exori":"1",
+	"exori min":"2",
+	"exori hur":"3",
+	"exori gran":"4",
+	"exori ico":"Q"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":60, "use_item":"great health potion", "priority":3},
+	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":10, "priority":2},
+	{"type":"mp", "below_percent":60, "use_item":"mana potion", "priority":1},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":40, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 100,
+	"mana_name": "mana potion",
+	"take_mana": 500,
+	"mana_leave": 200,
+	"health_name": "great health potion",
+	"take_health": 100,
+	"health_leave": 30
+},
+"persistent_actions": [
+        {"action":"drop_vials", "interval":60},
+	{"action":"haste", "interval":40,"args":{"hotkey":"V"}},
+	{"action":"eat_food","interval":60,"args":{"hotkey":"F11"}},
+        {"action":"equip_item", "interval":2, "use_in_battle":true, "args":{"hotkey":"F4", "amount":1, "selected_monsters":["Minotaur", "Minotaur Archer", "Minotaur Guard", "Minotaur Mage", "Cyclops", "Orc", "Rotworm"], "slot":"ring"}},
+       {"action":"blacklist_coords", "interval":1, "use_in_battle":true, "args":{"coords_barrier":[[32919,32071,6], [32906,32072,9], [32955,32106,6], [32323,32212,7], [32322,32212,7], [32323,32211,7], [32322,32211,7], [32323,32210,7], [32322,32210,7]]}}
+],
+"target_monsters": 
+[
+
+],
+"target_spells":
+[ 
+
+],
+"label_actions": 
+[
+        {"label":"use_crowbar", "action":"use_item_at_sqm",
+    "args": {"item_name":"crowbar", "sqm":[0,1]}
+},
+        {"label":"use_letterbag", "action":"use_item_at_sqm",
+    "args": {"item_name":"letterbag", "sqm":[0,1]}
+},
+        {"label":"kevin_mission1", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "yes", "yes", "yes", "yes", "yes", "yes"]}},
+	{"label":"Lizon_mission1", "action":"talk_npc", "args": {"list_words": ["edron", "yes"]}},
+        {"label":"lukosch_mission1", "action":"talk_npc", "args": {"list_words": ["ticket", "yes"]}},
+        {"label":"kevin_mission2", "action":"talk_npc", "args": {"list_words": ["mission", "yes"]}},
+        {"label":"folda_ida", "action":"talk_npc", "args": {"list_words": ["folda", "yes"]}},
+        {"label":"folda_vuelta", "action":"talk_npc", "args": {"list_words": ["tibia", "yes"]}},
+        {"label":"kevin_mission3", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "yes"]}},
+        {"label":"strange_fellow_mission3", "action":"talk_npc", "args": {"list_words": ["hat", "hat", "hat", "hat", "bill", "yes"]}},
+        {"label":"kevin_mission4", "action":"talk_npc", "args": {"list_words": ["mission", "yes"]}},
+        {"label":"kevin_mission4_bones", "action":"talk_npc", "args": {"list_words": ["mission", "all", "yes", "advancement", "yes", "bye"]}},
+        {"label":"kevin_mission5", "action":"talk_npc", "args": {"list_words": ["mission", "yes"]}},
+        {"label":"dermot_mission5", "action":"talk_npc", "args": {"list_words": ["present", "yes"]}},
+        {"label":"kevin_mission6", "action":"talk_npc", "args": {"list_words": ["mission", "yes"]}},
+        {"label":"hugo_mission6", "action":"talk_npc", "args": {"list_words": ["new uniforms", "new dress pattern"]}},
+        {"label":"kevin_mission6_dress", "action":"talk_npc", "args": {"list_words": ["new dress patterns"]}},
+        {"label":"talphion_mission6", "action":"talk_npc", "args": {"list_words": ["dress patterns", "dress patterns", "dress patterns", "dress patterns", "dress patterns"]}},
+        {"label":"kevin_mission6_patterns", "action":"talk_npc", "args": {"list_words": ["new dress patterns"]}},
+        {"label":"queen_eloise_mission6", "action":"talk_npc", "args": {"list_words": ["hail queen eloise", "uniforms"]}},
+        {"label":"kevin_mission6_patterns2", "action":"talk_npc", "args": {"list_words": ["new dress patterns", "yes"]}},
+        {"label":"noodles_banana", "action":"talk_npc", "args": {"list_words": ["sniff banana skin", "do you like that?"]}},
+        {"label":"noodles_fur", "action":"talk_npc", "args": {"list_words": ["sniff dirty fur", "do you like that?"]}},
+        {"label":"noodles_cheese", "action":"talk_npc", "args": {"list_words": ["sniff mouldy cheese", "do you like that?"]}},
+        {"label":"kevin_mission6_pattern3", "action":"talk_npc", "args": {"list_words": ["dress pattern"]}},
+        {"label":"hugo_dress_mission6", "action":"talk_npc", "args": {"list_words": ["dress pattern"]}},
+        {"label":"kevin_mission7", "action":"talk_npc", "args": {"list_words": ["advancement", "bye"]}},
+        {"label":"kevin_mission7_mission", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "bye"]}},
+        {"label":"kevin_mission7_mission2", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "bye"]}},
+        {"label":"kevin_mission7_mission3", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "Advancement", "yes", "bye"]}},
+        {"label":"benjamin_thais", "action":"talk_npc", "args": {"list_words": ["measurement"]}},
+        {"label":"olrik_abdendriel", "action":"talk_npc", "args": {"list_words": ["measurement", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes", "yes"]}},
+        {"label":"liane_carlin", "action":"talk_npc", "args": {"list_words": ["measurement", "yes"]}},
+        {"label":"chrystal_edron", "action":"talk_npc", "args": {"list_words": ["measurement"]}},
+        {"label":"dove_venore", "action":"talk_npc", "args": {"list_words": ["measurement", "yes"]}},
+        {"label":"lokur_kazordoon", "action":"talk_npc", "args": {"list_words": ["measurement"]}},
+        {"label":"kroox_kazordoon", "action":"talk_npc", "args": {"list_words": ["measurement"]}},
+        {"label":"kevin_mission8", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "yes"]}},
+        {"label":"kevin_mission8_2", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "yes", "advancement", "yes", "bye"]}},
+        {"label":"kevin_mission9", "action":"talk_npc", "args": {"list_words": ["mission", "yes", "bye"]}},
+        {"label":"kevin_mission9_2", "action":"talk_npc", "args": {"list_words": ["advancement", "yes", "mission", "yes"]}},
+        {"label":"nielson_mission9", "action":"talk_npc", "args": {"list_words": ["vega", "yes"]}},
+        {"label":"carlson_mission9_vuelta", "action":"talk_npc", "args": {"list_words": ["tibia", "yes"]}},
+        {"label":"kevin_mission10", "action":"talk_npc", "args": {"list_words": ["mission", "yes"]}},
+        {"label":"markwin_mission10", "action":"talk_npc", "args": {"list_words": ["bye"]}},
+        {"label":"markwin_mission10_2", "action":"talk_npc", "args": {"list_words": ["letter", "yes"]}},
+        {"label":"kevin_last", "action":"talk_npc", "args": {"list_words": ["mission", "advancement", "yes"]}}
+        
+        
+
+
+], 
+"loot": []
+}

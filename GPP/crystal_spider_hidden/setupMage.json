@@ -10,7 +10,6 @@
 },
 "containers": 
 {
-	"gold_bp":"Golden Backpack",
 	"loot_bp":"Yellow Backpack"
 },
 "tools":
@@ -48,8 +47,7 @@
 	"mana_leave": 50
 },
 "persistent_actions": [
-        {"action":"drop_vials", "interval":60},
-	{"action":"lure_monsters", "interval":0.5, "args":[2]},
+    {"action":"drop_vials", "interval":60},
 	{"action": "anti_paralyze", "interval": 3, "use_in_battle":true, "args": ["1"] },
 	{"action":"eat_food","interval":60,"args":{"hotkey":"f11"}}
 ],
