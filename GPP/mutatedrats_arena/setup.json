@@ -1,0 +1,72 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"after",
+	"anti_trap":"weapon"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword"
+},
+"containers": 
+{
+	"loot_bp":"Yellow Backpack"
+},
+"tools":
+{
+	"rope": {"name":"rope", "id": 3003},
+	"shovel": {"name":"light shovel", "id": 5710}
+},
+"items":
+{
+	"mana potion": {"hotkey":"e", "id":268, "use":"self"},
+	"strong health potion": {"hotkey":"f3", "id":236, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"utani hur": "v",
+	"exura ico":"r",
+	"exori":"1",
+	"exori hur":"3",
+	"exori ico":"q",
+	"utura":"R"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":50, "use_item":"health potion", "priority":3},
+	{"type":"hp", "below_percent":80, "use_spell":"exura ico", "min_mana_percent":10, "priority":2},
+	{"type":"mp", "below_percent":60, "use_item":"mana potion", "priority":1},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":40, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 10,
+	"mana_name": "mana potion",
+	"take_mana": 250,
+	"mana_leave": 30,
+	"health_name": "strong health potion",
+	"take_health": 30,
+	"health_leave": 10
+},
+"label_actions":
+	[
+	
+	],
+"persistent_actions": [
+        {"action":"drop_vials", "interval":60},
+	{"action":"eat_food","interval":60,"args":{"hotkey":"f11"}}
+],
+"target_monsters": 
+[
+	{"name":"Mutated Rat", "action":"follow", "loot":true}
+	
+],
+"target_spells":
+[ 
+	{"name":"exori ico", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Mutated Rat"]},
+	{"name":"exori hur", "min_mana_percent":10, "priority":1, "cooldown":5, "monsters":["Mutated Rat"]},
+	{"name":"exori", "min_mana_percent":20, "priority":2, "cooldown": 4, "min_monster_count":3}
+],
+"loot": []
+}

@@ -11,6 +11,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |15+ | [Rotworm Darashia North @GPP](GPP/rotworm_darashia_north/setup.json) | :star: | :star:|
 |15+ | [Rotworm Darashia North-East @GPP](GPP/rotworm_darashia_north_east/setup.json) | :star: | :star:|
 |30+ | [Ankrahmun Terramites @elsteiner](elsteiner/Ankrahmun_Terramites/setup_ek.json) | :star: | :star:|
+|30+ | [Tortoise Fenrock @GPP](GPP/tortoise_fenrock/setup.json) | :star::star::star: | :star::star:|
 |35+ | [Mammoth Sharing Factory @elsteiner](elsteiner/Svargrond_MammothSharingFactory/setup_ek.json) | :star: | :star:|
 |35+ | [Edron lvl 35 Forgotten Tomb @murdegan](murdegan/Edron lvl 35 Forgotten Tomb/setup.json) | 5-10k | 70k/h|
 |40+ | [Yalahar Mistrock North @murdegan](murdegan/Yalahar Mistrock North/setup_EK.json) | 3-5k/h | 50k/h|
@@ -20,11 +21,14 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |50+ | [Postman Quest @murdegan](murdegan/Postman_Quest/setup_EK.json) |  | |
 |50+ | [Rorcs @GPP](GPP/rorc/setup.json) | :star::star: | :star:|
 |50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setupek.json) | :star::star::star: | :star::star:|
+|50+ | [Mutated Rats Arena Quarter @GPP](GPP/mutatedrats_arena/setup.json) | :star: | :star::star::star:|
+|50+ | [Corym Venore -2 South @GPP](GPP/corym_venore_-2south) | :star::star: | :star::star::star:|
 |50+ | [Apes City -1 Port Hope @Juanjo](Juanjo/apes_city_-1/setup_ek.json) | :star::star::star::star: | :star:|
 |50+ | [Apes City -2 Port Hope @Juanjo](Juanjo/apes_city_-2/setup_ek.json) | :star::star::star::star: | :star:|
 |50+ | [Dragons Yalahar @Juanjo](Juanjo/dragons_yalahar/setup_ek.json) | :star::star: | :star::star:|
 |60+ | [Necromancer East Yalahar @GPP](GPP/necromancer_east_yalahar/setup.json) | :star::star: | :star::star:|
 |60+ | [Bonelord Cave @GPP](GPP/bonelord_cave/setup.json) | :star::star::star: | :star::star:|
+|60+ | [Quara Scouts Hidden @GPP](GPP/quarascouts_hidden/setup.json) | :star::star: | :star::star::star:|
 |70+ | [Lion Rock @Juanjo](Juanjo/lion_rock/setup_ek70.json) | :star::star: | :star::star::star:|
 |80+ | [Venore Coryms East @elsteiner](elsteiner/Venore_CorymsEast/setup_ek.json) | :star: | :star:|
 |80+ | [Hidden Crystal Spiders @GPP](GPP/crystal_spider_hidden/setup.json) | :star::star::star: | :star::star:|
@@ -35,6 +39,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |100+ | [Deepsea Blood Crabs Svargrond @Akinael](Akinael/Deepsea_blood_crabs/setup_ek.json) | :star::star::star: | :star::star::star:|
 |100+ | [Yalahar Giant Spider @murdegan](murdegan/Yalahar Giant Spider/setup_EK.json) | 15k/h | 100k/h|
 |100+ | [Tuhalu Quaras @GPP](GPP/tuhalu_quaras/setup.json) | :star::star: | :star::star::star:|
+|100+ | [Krailos Spider Cave -1 @GPP](GPP/krailos_spidercave_-1/setup.json) | :star::star: | :star::star::star:|
 |110+ | [Nargor Crystal Garden @murdegan](murdegan/Nargor Crystal Garden/setup_EK.json) | 0-15k/h | 200k/h|
 |110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar Vengoth Werewolf/With Access/setup_EK.json) | 10-30k | 200k/h|
 |110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar Vengoth Werewolf/Without Access/setup_EK.json) | 10-30k | 200k/h|

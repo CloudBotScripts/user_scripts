@@ -2,7 +2,7 @@
 "general": 
 {
 	"loot_type":"auto",
-	"loot_priority":"first"
+	"loot_priority":"after"
 	"anti_trap":"weapon"
 },
 "script_options": {
@@ -16,7 +16,7 @@
 "tools":
 {
 	"rope": {"name":"rope", "id": 3003},
-	"light shovel": {"name":"light shovel", "id": 5710}
+	"shovel": {"name":"light shovel", "id": 5710}
 },
 "items":
 {
