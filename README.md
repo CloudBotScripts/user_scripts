@@ -6,18 +6,18 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
 |8+ | [Port Hope Swamp Trolls @elsteiner](elsteiner/PortHope_SwampTrolls/setup.json) | :star::star::star: | :star:|
-|8+ | [Thais Wasp @murdegan](murdegan/Thais Wasp/setup.json) | 3-5k/h | 10k/h|
-|10+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty Bay Rotworms/Knight/setup.json) |  | 30k/h|
+|8+ | [Thais Wasp @murdegan](murdegan/Thais_Wasp/setup.json) | 3-5k/h | 10k/h|
+|10+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty_Bay_Rotworms/Knight/setup.json) |  | 30k/h|
 |15+ | [Rotworm Darashia North @GPP](GPP/rotworm_darashia_north/setup.json) | :star: | :star:|
 |15+ | [Rotworm Darashia North-East @GPP](GPP/rotworm_darashia_north_east/setup.json) | :star: | :star:|
 |30+ | [Ankrahmun Terramites @elsteiner](elsteiner/Ankrahmun_Terramites/setup_ek.json) | :star: | :star:|
 |30+ | [Tortoise Fenrock @GPP](GPP/tortoise_fenrock/setup.json) | :star::star::star: | :star::star:|
 |35+ | [Mammoth Sharing Factory @elsteiner](elsteiner/Svargrond_MammothSharingFactory/setup_ek.json) | :star: | :star:|
-|35+ | [Edron lvl 35 Forgotten Tomb @murdegan](murdegan/Edron lvl 35 Forgotten Tomb/setup.json) | 5-10k | 70k/h|
-|40+ | [Yalahar Mistrock North @murdegan](murdegan/Yalahar Mistrock North/setup_EK.json) | 3-5k/h | 50k/h|
+|35+ | [Edron lvl 35 Forgotten Tomb @murdegan](murdegan/Edron_lvl_35_Forgotten_Tomb/setup.json) | 5-10k | 70k/h|
+|40+ | [Yalahar Mistrock North @murdegan](murdegan/Yalahar_Mistrock_North/setup_EK.json) | 3-5k/h | 50k/h|
 |50+ | [Dark Magician Tower @The_Taunter](The_Taunter/Dark_Magician_Tower/setup_ek.json) | :star::star::star: | :star::star:|
-|50+ | [Yalahar Mistrock West @murdegan](murdegan/Yalahar Mistrock West/setup_EK.json) | 3-5k/h | 65k/h|
-|50+ | [Edron lvl 50 Forgotten Tomb @murdegan](murdegan/Edron lvl 50 Forgotten Tomb/setup.json) | 5-10k | 120k/h|
+|50+ | [Yalahar Mistrock West @murdegan](murdegan/Yalahar_Mistrock_West/setup_EK.json) | 3-5k/h | 65k/h|
+|50+ | [Edron lvl 50 Forgotten Tomb @murdegan](murdegan/Edron_lvl_50_Forgotten_Tomb/setup.json) | 5-10k | 120k/h|
 |50+ | [Postman Quest @murdegan](murdegan/Postman_Quest/setup_EK.json) |  | |
 |50+ | [Rorcs @GPP](GPP/rorc/setup.json) | :star::star: | :star:|
 |50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setupek.json) | :star::star::star: | :star::star:|
@@ -37,13 +37,13 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |80+ | [LB Wyrms Hills @5qemeister](5qemeister/wyrm_hills_lb/setup_ek.json) | :star::star: | :star::star::star:|
 |100+ | [Hrodmir Crystal Cave @elsteiner](elsteiner/Svargrond_HrodmirCrystalCave/setup.json) | :star: | :star:|
 |100+ | [Deepsea Blood Crabs Svargrond @Akinael](Akinael/Deepsea_blood_crabs/setup_ek.json) | :star::star::star: | :star::star::star:|
-|100+ | [Yalahar Giant Spider @murdegan](murdegan/Yalahar Giant Spider/setup_EK.json) | 15k/h | 100k/h|
+|100+ | [Yalahar Giant Spider @murdegan](murdegan/Yalahar_Giant_Spider/setup_EK.json) | 15k/h | 100k/h|
 |100+ | [Tuhalu Quaras @GPP](GPP/tuhalu_quaras/setup.json) | :star::star: | :star::star::star:|
 |100+ | [Krailos Spider Cave -1 @GPP](GPP/krailos_spidercave_-1/setup.json) | :star::star: | :star::star::star:|
-|110+ | [Nargor Crystal Garden @murdegan](murdegan/Nargor Crystal Garden/setup_EK.json) | 0-15k/h | 200k/h|
-|110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar Vengoth Werewolf/With Access/setup_EK.json) | 10-30k | 200k/h|
-|110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar Vengoth Werewolf/Without Access/setup_EK.json) | 10-30k | 200k/h|
-|120+ | [Yalahar Sunken @murdegan](murdegan/Yalahar Sunken/setup_EK.json) | no tested | no tested|
+|110+ | [Nargor Crystal Garden @murdegan](murdegan/Nargor_Crystal_Garden/setup_EK.json) | 0-15k/h | 200k/h|
+|110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar_Vengoth_Werewolf/With_Access/setup_EK.json) | 10-30k | 200k/h|
+|110+ | [Yalahar Vengoth Werewolf @murdegan](murdegan/Yalahar_Vengoth_Werewolf/Without_Access/setup_EK.json) | 10-30k | 200k/h|
+|120+ | [Yalahar Sunken @murdegan](murdegan/Yalahar_Sunken/setup_EK.json) | ? | ?|
 |120+ | [Thais Ice Portal @GPP](GPP/thais_ice_portal/setup.json) | :star::star::star: | :star::star:|
 |130+ | [Alchemist Quarter @GPP](GPP/alchemist_quarter/setup.json) | :star: | :star::star::star:|
 |130+ | [Carlin Cults @Juanjo](Juanjo/carlin_cults/setup_ek.json) | :star: | :star::star::star:|
@@ -59,12 +59,12 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
 |8+ | [Svargrond Frost Troll @InsaneStore](InsaneStore/SvargrondFrostTroll/IS_Svargrond_Frost_Troll_RP_v1.0.json) | :star::star: | :star:|
-|10+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty Bay Rotworms/Paladin/setup.json) |  | 30k/h|
+|10+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty_Bay_Rotworms/Paladin/setup.json) |  | 30k/h|
 |23+ | [Zombie Liberty Bay @GPP](GPP/zombie_lb/setup.json) | :star: | :star::star::star:|
 |25+ | [Yalahar Cemetery Quarter Right @elsteiner](elsteiner/Yalahar_CemeteryQuarterRight/setup.json) | :star: | :star:|
-|40+ | [Yalahar Mistrock North @murdegan](murdegan/Yalahar Mistrock North/setup_RP.json) | 3-5k/h | 50k/h|
+|40+ | [Yalahar Mistrock North @murdegan](murdegan/Yalahar_Mistrock_North/setup_RP.json) | 3-5k/h | 50k/h|
 |50+ | [Nibelor Ice Golems + Crystal Spiders @elsteiner](elsteiner/Svargrond_Nibeolor_IceGolems_CrystalSpiders/setup_rp.json) | :star: | :star:|
-|50+ | [Yalahar Mistrock West @murdegan](murdegan/Yalahar Mistrock West/setup_RP.json) | 3-5k/h | 65k/h|
+|50+ | [Yalahar Mistrock West @murdegan](murdegan/Yalahar_Mistrock_West/setup_RP.json) | 3-5k/h | 65k/h|
 |50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setup.json) | :star::star::star: | :star::star:|
 |50+ | [Necromancer East Yalahar @GPP](GPP/necromancer_east_yalahar/setuprp.json) | :star::star::star: | :star::star:|
 |80+ | [Yalahar Cemetery -1 @elsteiner](elsteiner/Yalahar_Cemetery-1/setup_rp.json) | :star: | :star:|
@@ -76,7 +76,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 | Level | Name      | Profit        | XP   |
 | ----- | --------- | ------------- | ---- |
 |8+ | [Rotworm Darashia North  @GPP](GPP/rotworm_darashia_north/setupmage.json) | :star: | :star:|
-|12+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty Bay Rotworms/Mage/setup.json) |  | 30k/h|
+|12+ | [Liberty Bay Rotworms @murdegan](murdegan/Liberty_Bay_Rotworms/Mage/setup.json) |  | 30k/h|
 |30+ | [Mad Scientists @Juanjo](Juanjo/mad_scientist/setup_mage.json) | :star: | :star::star:|
 |30+ | [Upper Spikes @Juanjo](Juanjo/upper_spikes/setup_mage.json) | :star: | :star::star:|
 |30+ | [Laguna Island @Juanjo](Juanjo/laguna_island/setup_mage_low.json) | :star::star::star::star: | :star::star:|

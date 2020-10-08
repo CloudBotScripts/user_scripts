@@ -1,0 +1,89 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+	"hours_leave": [9],
+	"skill_train":"sword",
+	"sort_deposit": {"alexander":6, "lailene":6, "tamoril":8, "rashid": 9, "green_djinn": 10}
+},
+"containers": 
+{
+	"gold_bp":"Beach Backpack",
+	"loot_bp":"Orange Backpack"
+},
+"tools":
+{
+
+},
+"items":
+{
+        "sword ring": {"hotkey":"f4", "id":3091, "use":"equip"},
+	"mana potion": {"hotkey":"e", "id":268, "use":"self"},
+	"great health potion": {"hotkey":"f2", "id":239, "use":"self"},
+	"brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"utani hur": "V",
+	"utura": "R",
+	"utito tempo": "X",
+	"exura ico":"L",
+	"exori":"1",
+	"exori min":"2",
+	"exori hur":"3",
+	"exori gran":"4",
+	"exori ico":"Q"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":60, "use_item":"great health potion", "priority":3},
+	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":10, "priority":2},
+	{"type":"mp", "below_percent":60, "use_item":"mana potion", "priority":1},
+	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":40, "priority":1, "cooldown":60}
+],
+"hunt_config": {
+	"cap_leave": 10,
+	"mana_name": "mana potion",
+	"take_mana": 600,
+	"mana_leave": 150,
+	"health_name": "great health potion",
+	"take_health": 100,
+	"health_leave": 30
+},
+"label_actions": 
+[
+ 
+        {"label":"check_ring", "action":"conditional_jump_item_count_below", "args": {"item_name":"sword ring", "amount":4, "label_jump":"train"}},
+        {"label":"check_low_ring", "action":"conditional_jump_item_count_below", "args": {"item_name":"sword ring", "amount":1, "label_jump":"leave"}},
+        {"label":"withdraw_ring", "action":"withdraw_item_from_depot_to_backpack", "args": {
+	    "item_name":"sword ring", "depot_num":3, "backpack_name":"Backpack", "amount":6, "stack":false}}
+
+],
+"persistent_actions": [
+        {"action":"drop_vials", "interval":60},
+	{"action":"haste", "interval":40,"args":{"hotkey":"V"}},
+	{"action":"eat_food","interval":60,"args":{"hotkey":"f11"}},
+        {"action":"equip_item", "interval":2, "use_in_battle":true, "args":{"hotkey":"f4", "amount":1, "selected_monsters":["Giant Spider", "Mutated Bat"], "slot":"ring"}},
+        {"action":"blacklist_coords", "interval":1, "use_in_battle":true, "args":{"coords_barrier":[[32775,31066,3], [32777,31068,3], [32775,31073,3], [32777,31075,3]]}}
+],
+"target_monsters": 
+[       
+        {"name":"Tarantula", "action":"follow", "loot":false},
+	{"name":"Giant Spider", "action":"follow", "loot":true},
+        {"name":"Mutated Bat", "action":"follow", "loot":true}
+        
+],
+"target_spells":
+[ 
+	{"name":"exori ico", "min_mana_percent":20, "priority":1, "cooldown":6,
+		"monsters":["Giant Spider", "Mutated Bat"]},
+	{"name":"exori", "min_mana_percent":20, "priority":2, "cooldown": 4, "min_monster_count":2, "monsters":["Giant Spider", "Mutated Bat"]},
+	{"name":"exori gran", "min_mana_percent":40, "priority":4, "cooldown": 6,  "min_monster_count":3, "monsters":["Giant Spider", "Mutated Bat"]},
+	{"name":"utito tempo", "min_mana_percent":65, "priority":4, "cooldown": 20,  "min_monster_count":4, "monsters":["Giant Spider", "Mutated Bat"]},
+	{"name":"exori min", "min_mana_percent":30, "priority":3, "cooldown": 6, "min_monster_count":2, "monsters":["Giant Spider", "Mutated Bat"]}
+],
+"loot": []
+}
