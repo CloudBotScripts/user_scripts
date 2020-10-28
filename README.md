@@ -22,7 +22,7 @@ If you want to share one of your scripts, follow the tutorial [here](https://dri
 |50+ | [Rorcs @GPP](GPP/rorc/setup.json) | :star::star: | :star:|
 |50+ | [Liberty Bay Cults @GPP](GPP/liberty_bay_cults/setupek.json) | :star::star::star: | :star::star:|
 |50+ | [Mutated Rats Arena Quarter @GPP](GPP/mutatedrats_arena/setup.json) | :star: | :star::star::star:|
-|50+ | [Corym Venore -2 South @GPP](GPP/corym_venore_-2south) | :star::star: | :star::star::star:|
+|50+ | [Corym Venore -2 South @GPP](GPP/corym_venore_-2south/setup.json) | :star::star: | :star::star::star:|
 |50+ | [Apes City -1 Port Hope @Juanjo](Juanjo/apes_city_-1/setup_ek.json) | :star::star::star::star: | :star:|
 |50+ | [Apes City -2 Port Hope @Juanjo](Juanjo/apes_city_-2/setup_ek.json) | :star::star::star::star: | :star:|
 |50+ | [Dragons Yalahar @Juanjo](Juanjo/dragons_yalahar/setup_ek.json) | :star::star: | :star::star:|

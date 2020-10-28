@@ -1,92 +1,217 @@
-{
-"general": 
-{
-    "loot_type":"auto",
-    "loot_priority":"first"
-},
-"script_options": {
-    "hours_leave": [9.30],
-    "skill_train":"sword"
-},
-"containers": 
-{
-      "gold_bp":"Beach Backpack",
-      "loot_bp":"Blue Backpack"
-
-},
-"tools": {
-     "rope": {"name":"rope", "id": 3003},
-     "shovel": {"name":"shovel", "id": 3457}
-},
-"items":
-{
-    "mana potion": {"hotkey":"e", "id":268, "use":"self"},
-    "strong health potion": {"hotkey":"f", "id":236, "use":"self"},
-    "brown mushroom": {"hotkey":"f11", "id":3725, "use":"use"}
-
- 
-},
-"spells":
-{
-    "exura ico":"r",
-    "exori":"1",
-    "exori ico":"q",
+ {
+  "general": {
+    "loot_type": "auto",
+    "loot_priority": "first"
+  },
+  "script_options": {
+    "hours_leave": [],
+    "skill_train": "sword"
+  },
+  "containers": {
+    "gold_bp": "Orange Backpack",
+    "loot_bp": "Red Backpack"
+  },
+  "tools": {
+    "rope": {
+      "name": "rope",
+      "id": 3003
+    },
+    "shovel": {
+      "name": "shovel",
+      "id": 3457
+    }
+  },
+  "items": {
+    "mana potion": {
+      "hotkey": "e",
+      "id": 268,
+      "use": "self"
+    },
+    "health potion": {
+      "hotkey": "f",
+      "id": 266,
+      "use": "self"
+    },
+    "brown mushroom": {
+      "hotkey": "f11",
+      "id": 3725,
+      "use": "use"
+    }
+  },
+  "spells": {
+    "exura ico": "r",
+    "exori": "1",
+    "exori ico": "q",
     "exori hur": "v",
-    "utura": "z"
-
-},
-"healing":
-[
-	{"type":"hp", "below_percent":60, "use_item":"strong health potion", "priority":3},
-	{"type":"hp", "below_percent":85, "use_spell":"exura ico", "min_mana_percent":10, "priority":2},
-	{"type":"mp", "below_percent":60, "use_item":"mana potion", "priority":1},
-	{"type":"hp", "below_percent":95, "use_spell":"utura", "min_mana_percent":40, "priority":1, "cooldown":60}
-],
-"hunt_config": {
-    "cap_leave": -1,
+    "utura": "c"
+  },
+  "healing": [
+    {
+      "type": "hp",
+      "below_percent": 80,
+      "use_spell": "exura ico",
+      "min_mana_percent": 5,
+      "priority": 2
+    },
+    {
+      "type": "hp",
+      "below_percent": 60,
+      "use_item": "health potion",
+      "priority": 3
+    },
+    {
+      "type": "mp",
+      "below_percent": 50,
+      "use_item": "mana potion",
+      "priority": 2
+    },
+    {
+      "type": "hp",
+      "below_percent": 95,
+      "use_spell": "utura",
+      "min_mana_percent": 20,
+      "priority": 1,
+      "cooldown": 60
+    }
+  ],
+  "hunt_config": {
+    "cap_leave": -2,
     "mana_name": "mana potion",
-    "take_mana": 320,
-    "mana_leave": 160,
-    "health_name": "strong health potion",
-    "take_health": 60,
-    "health_leave": 35
-
-},
-"label_actions": 
-[],
-
-"persistent_actions": 
-[
-    {"action":"drop_vials", "interval":60},
-    {"action":"eat_food", "interval":30, "args":["f11"]},
-    {"action":"anti_paralyze", "interval":1, "args":["r"]},
-    {"action":"lure_monsters", "interval":0.5, "args":[4]},
-    {"action":"stop_target_no_supplies", "interval": 4, "args":{"mana":true, "health":true}}
-
-],
-"target_monsters": 
-[
-	{"name":"Skeleton", "action":"follow", "loot":false},
-	{"name":"Ghoul", "action":"follow", "loot":true},
-	{"name":"Crypt Shambler", "action":"follow", "loot":false},
-	{"name":"Demon Skeleton", "action":"follow", "loot":false},
-        {"name":"Mummy", "action":"follow", "loot":true},
-        {"name":"Gargoyle", "action":"follow", "loot":false},
-	{"name":"Stone Golem", "action":"follow", "loot":false},
-        {"name":"Blue Djinn", "action":"follow", "loot":false},
-        {"name":"Green Djinn", "action":"follow", "loot":false},
-        {"name":"Vampire", "action":"follow", "loot":true},
-        {"name":"Necromancer", "action":"follow", "loot":false}
-
-],
-"target_spells":
-[
-	{"name":"exori ico", "min_mana_percent":30, "priority":1, "cooldown":6,
-		"monsters":["Mummy", "Demon Skeleton", "Crypt Shambler", "Ghoul", "Gargoyle", "Blue Djinn", "Green Djinn", "Vampire", "Necromancer"]},
-	{"name":"exori hur", "min_mana_percent":30, "priority":1, "cooldown":6,
-		"monsters":["Mummy", "Demon Skeleton", "Crypt Shambler", "Ghoul", "Gargoyle", "Blue Djinn", "Green Djinn", "Vampire", "Necromancer"]},
-	{"name":"exori", "min_mana_percent":30, "priority":2, "min_monster_count":4}
-],
-"loot": [
-]
+    "take_mana": 420,
+    "mana_leave": 200,
+    "health_name": "health potion",
+    "take_health": 30,
+    "health_leave": 10
+  },
+  "label_actions": [
+    {
+      "label": "activate_lure",
+      "action": "set_persistent_interval",
+      "args": {
+        "persistent_alias": "lure_mode",
+        "interval": 0.5
+      }
+    },
+    {
+      "label": "deactivate_lure",
+      "action": "set_persistent_interval",
+      "args": {
+        "persistent_alias": "lure_mode",
+        "interval": 9999
+      }
+    }
+  ],
+  "persistent_actions": [
+    {
+      "action": "drop_vials",
+      "interval": 10
+    },
+    {
+      "action": "eat_food",
+      "interval": 30,
+      "args": [
+        "f11"
+      ]
+    },
+    {
+      "action": "anti_paralyze",
+      "interval": 1,
+      "args": [
+        "r"
+      ]
+    },
+    {
+      "alias": "lure_mode",
+      "action": "lure_monsters",
+      "interval": 0.5,
+      "args": {
+        "count": 4,
+        "min_count": 1
+      }
+    }
+  ],
+  "target_monsters": [
+    {
+      "name": "Skeleton",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Ghoul",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Crypt Shambler",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Demon Skeleton",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Mummy",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Gargoyle",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Stone Golem",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Vampire",
+      "action": "follow",
+      "loot": true
+    },
+    {
+      "name": "Blue Djinn",
+      "action": "follow",
+      "loot": true
+    }
+  ],
+  "target_spells": [
+    {
+      "name": "exori ico",
+      "min_mana_percent": 30,
+      "priority": 1,
+      "cooldown": 6,
+      "monsters": [
+        "Mummy",
+        "Demon Skeleton",
+        "Crypt Shambler",
+        "Gargoyle",
+        "Stone Golem",
+        "Vampire"
+      ]
+    },
+    {
+      "name": "exori hur",
+      "min_mana_percent": 30,
+      "priority": 1,
+      "cooldown": 6,
+      "monsters": [
+        "Mummy",
+        "Demon Skeleton",
+        "Crypt Shambler",
+        "Gargoyle",
+        "Stone Golem",
+        "Vampire"
+      ]
+    },
+    {
+      "name": "exori",
+      "min_mana_percent": 30,
+      "priority": 2,
+      "min_monster_count": 3
+    }
+  ],
+  "loot": []
 }
